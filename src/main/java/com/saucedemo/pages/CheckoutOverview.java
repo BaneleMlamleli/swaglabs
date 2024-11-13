@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.ecommerce.utils.WaitsFactory;
+import com.saucedemo.utilities.WaitsFactory;
 
 /**
  * CheckoutOverview
@@ -33,10 +33,10 @@ public class CheckoutOverview {
 
     @FindBy(xpath = "//div[@class='summary_value_label']")
     List<WebElement> valueLabel;
-    
+
     @FindBy(xpath = "//div[@class='summary_subtotal_label']")
     WebElement subtotalAmount;
-    
+
     @FindBy(xpath = "//div[@class='summary_tax_label']")
     WebElement taxAmount;
 
@@ -51,11 +51,9 @@ public class CheckoutOverview {
 
     WaitsFactory waitsFactory = new WaitsFactory();
 
-
     public CheckoutOverview(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, CheckoutOverview.class);
     }
-
 
 }

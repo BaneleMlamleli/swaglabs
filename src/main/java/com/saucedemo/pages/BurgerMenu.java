@@ -8,8 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.ecommerce.utils.ConfigReader;
-import com.ecommerce.utils.WaitsFactory;
+import com.saucedemo.utilities.ConfigReader;
+import com.saucedemo.utilities.WaitsFactory;
 
 /**
  * The BurgerMenu class represents the burger menu in the e-commerce

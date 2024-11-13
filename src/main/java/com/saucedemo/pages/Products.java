@@ -10,7 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import com.ecommerce.utils.WaitsFactory;
+import com.saucedemo.utilities.WaitsFactory;
 
 /**
  * The Products class represents the products page of the e-commerce
