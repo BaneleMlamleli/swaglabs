@@ -1,4 +1,4 @@
-# swag_labs_v2
+# swaglabs
 
 This is Java Selenium Framework that automates [swaglabs](https://www.saucedemo.com/v1/index.html), a small e-commerce website. My aim is to try and create a robust, maintainable, and scalable Selenium framework that implements real word concepts, standards and technologies
 
@@ -32,7 +32,7 @@ I implemented the page object model design pattern, where all the tests are sepa
 
 ## Execution
 
-There are two ways one can run this project
+There are three ways one can run this project
 
 - You can run it directly from the test class
 - Run from testng.xml
