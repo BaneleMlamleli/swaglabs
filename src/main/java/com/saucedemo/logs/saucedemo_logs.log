@@ -20,3 +20,25 @@
 17-11-2024 22:31:36 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate loginPage method ****
 17-11-2024 22:31:36 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate assertLoginPage method ****
 17-11-2024 22:31:37 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
+17-11-2024 23:22:12 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method****
+17-11-2024 23:22:12 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method****
+17-11-2024 23:22:12 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method****
+17-11-2024 23:22:12 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method****
+17-11-2024 23:22:12 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method****
+17-11-2024 23:22:12 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+17-11-2024 23:22:12 [main] INFO  com.saucedemo.core.BaseClass$1 - **** initiating browser in the initBrowser method ****
+17-11-2024 23:22:12 [main] INFO  com.saucedemo.core.BaseClass$1 - Instance of driver in BaseClass: null
+17-11-2024 23:22:12 [main] INFO  com.saucedemo.core.BaseClass$1 - Browser: chrome
+17-11-2024 23:22:12 [main] INFO  com.saucedemo.core.BaseClass$1 - url: https://www.saucedemo.com/v1/index.html
+17-11-2024 23:22:13 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate verifyLoginPage method ****
+17-11-2024 23:22:14 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate verifyLoginPage method ****
+17-11-2024 23:22:14 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate verifyLoginPage method ****
+17-11-2024 23:22:14 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate verifyLoginPage method ****
+17-11-2024 23:22:14 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate verifyLoginPage method ****
+17-11-2024 23:22:14 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate verifyLoginPage method ****
+17-11-2024 23:22:14 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate verifyLoginPage method ****
+17-11-2024 23:22:14 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate loginPage method ****
+17-11-2024 23:22:14 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate assertLoginPage method ****
+17-11-2024 23:22:14 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
