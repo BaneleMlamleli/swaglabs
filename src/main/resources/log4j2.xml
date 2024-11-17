@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="basePath">src/main/java/com/saucedemo/logs</Property>
+    </Properties>
+    <Appenders>
+        <!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{dd-MM-yyyy HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" />
+        </Console>
+        <!-- File Appender -->
+        <RollingFile name="File" fileName="${basePath}/saucedemo_logs.log"
+            filePattern="${basePath}/saucedemo_logs-%d{dd-MM-yyyy HH:mm:ss}.log">
+            <PatternLayout pattern="%d{dd-MM-yyyy HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" />
+            <SizeBasedTriggeringPolicy size="5000" />
+        </RollingFile>
+
+        <!-- <File name="log_file" fileName="${basePath}/saucedemo_logs.log"
+            filePattern="${basePath}/saucedemo_logs-%d{dd-MM-yyyy HH:mm:ss}.log">
+            <PatternLayout>
+                <Pattern>
+                    %d{dd-MM-yyyy HH:mm:ss} [%t] %-5level %logger{36} - %msg%n
+                </Pattern>
+            </PatternLayout>
+            <SizeBasedTriggeringPolicy size="5000" />
+        </File> -->
+    </Appenders>
+
+    <Loggers>
+        <!-- Application Logger -->
+        <Logger name="com.saucedemo" level="debug" additivity="false">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="File" />
+            <!-- <AppenderRef ref="log_file" /> -->
+        </Logger>
+
+        <!-- Root Logger -->
+        <Root level="info"> <!-- log levels: All, Trace, Info, Warn, Error, Debug, Fatal, Off -->
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="File" />
+            <!-- <AppenderRef ref="log_file" /> -->
+        </Root>
+    </Loggers>
+</Configuration>
