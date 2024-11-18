@@ -2,6 +2,8 @@ package com.saucedemo.pages;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -69,10 +71,12 @@ public class Products {
 
     WaitsFactory waitsFactory = new WaitsFactory();
 
+    Logger logger = LogManager.getLogger(new Object() {
+    }.getClass().getName());
+
     public Products(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, Products.class);
-        System.out.println("driver in Products: " + driver);
     }
 
     /**

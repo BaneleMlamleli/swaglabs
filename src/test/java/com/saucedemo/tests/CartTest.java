@@ -1,5 +1,7 @@
 package com.saucedemo.tests;
 
-public class CartTest {
+import com.saucedemo.core.BaseClass;
+
+public class CartTest extends BaseClass {
 
 }

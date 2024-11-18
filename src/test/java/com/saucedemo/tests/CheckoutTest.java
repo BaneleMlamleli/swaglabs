@@ -1,5 +1,7 @@
 package com.saucedemo.tests;
 
-public class CheckoutTest {
+import com.saucedemo.core.BaseClass;
+
+public class CheckoutTest extends BaseClass {
 
 }

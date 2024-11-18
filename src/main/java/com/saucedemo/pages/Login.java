@@ -54,7 +54,7 @@ public class Login {
 
     WaitsFactory waitsFactory = new WaitsFactory();
 
-    public Logger logger = LogManager.getLogger(new Object() {
+    Logger logger = LogManager.getLogger(new Object() {
     }.getClass().getName());
 
     public Login(WebDriver driver) {
