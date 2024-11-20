@@ -14,7 +14,7 @@ public class LoginTest extends BaseClass {
     String incorrectPassword = "wrongpassword01";
     String incorrectUsername = "wrongUsername";
 
-    @Test
+    @Test(groups = { "successful_login" })
     public void validLoginDetails() {
         new Login(driver).loginPage(correctUsername, correctPassword);
     }

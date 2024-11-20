@@ -1,35 +1,46 @@
-17-11-2024 23:27:38 [main] INFO  com.saucedemo.core.BaseClass$1 - Instance of driver in BaseClass: null
-17-11-2024 23:27:38 [main] INFO  com.saucedemo.core.BaseClass$1 - Browser: chrome
-17-11-2024 23:27:38 [main] INFO  com.saucedemo.core.BaseClass$1 - url: https://www.saucedemo.com/v1/index.html
-17-11-2024 23:27:41 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate verifyLoginPage method ****
-17-11-2024 23:27:41 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate verifyLoginPage method ****
-17-11-2024 23:27:41 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate verifyLoginPage method ****
-17-11-2024 23:27:41 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate verifyLoginPage method ****
-17-11-2024 23:27:41 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate verifyLoginPage method ****
-17-11-2024 23:27:41 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate verifyLoginPage method ****
-17-11-2024 23:27:41 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate verifyLoginPage method ****
-17-11-2024 23:27:41 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate loginPage method ****
-17-11-2024 23:27:41 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate assertLoginPage method ****
-17-11-2024 23:27:42 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
-17-11-2024 23:33:34 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method****
-17-11-2024 23:33:34 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method****
-17-11-2024 23:33:34 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method****
-17-11-2024 23:33:34 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method****
-17-11-2024 23:33:34 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method****
-17-11-2024 23:33:34 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+21-11-2024 01:00:11 [main] INFO  com.saucedemo.pages.Products$1 - **** executing constructor for Products class ****
+21-11-2024 01:00:11 [main] INFO  com.saucedemo.pages.Products$1 - **** Initiated socialMediaImages method in the Products class ****
+21-11-2024 01:00:11 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
+21-11-2024 01:04:09 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+21-11-2024 01:04:09 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+21-11-2024 01:04:09 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   Command line suite
 
-17-11-2024 23:33:34 [main] INFO  com.saucedemo.core.BaseClass$1 - **** initiating browser in the initBrowser method ****
-17-11-2024 23:33:34 [main] INFO  com.saucedemo.core.BaseClass$1 - Instance of driver in BaseClass: null
-17-11-2024 23:33:34 [main] INFO  com.saucedemo.core.BaseClass$1 - Browser: chrome
-17-11-2024 23:33:34 [main] INFO  com.saucedemo.core.BaseClass$1 - url: https://www.saucedemo.com/v1/index.html
-17-11-2024 23:33:35 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate verifyLoginPage method ****
-17-11-2024 23:33:36 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate verifyLoginPage method ****
-17-11-2024 23:33:36 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate verifyLoginPage method ****
-17-11-2024 23:33:36 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate verifyLoginPage method ****
-17-11-2024 23:33:36 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate verifyLoginPage method ****
-17-11-2024 23:33:36 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate verifyLoginPage method ****
-17-11-2024 23:33:36 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate verifyLoginPage method ****
-17-11-2024 23:33:36 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate loginPage method ****
-17-11-2024 23:33:36 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate assertLoginPage method ****
-17-11-2024 23:33:36 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
+21-11-2024 01:08:16 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+21-11-2024 01:08:16 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+21-11-2024 01:08:16 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+21-11-2024 01:08:16 [main] INFO  com.saucedemo.core.BaseClass$1 - **** initiating browser in the initBrowser method ****
+21-11-2024 01:08:16 [main] INFO  com.saucedemo.core.BaseClass$1 - Instance of driver in BaseClass: null
+21-11-2024 01:08:16 [main] INFO  com.saucedemo.core.BaseClass$1 - Browser: chrome
+21-11-2024 01:08:16 [main] INFO  com.saucedemo.core.BaseClass$1 - url: https://www.saucedemo.com/v1/index.html
+21-11-2024 01:08:18 [main] INFO  com.saucedemo.pages.Products$1 - **** executing constructor for Products class ****
+21-11-2024 01:08:18 [main] INFO  com.saucedemo.pages.Products$1 - **** Initiated allProductsInfo method in the Products class****
+21-11-2024 01:08:28 [main] INFO  com.saucedemo.pages.Products$1 - **** executing constructor for Products class ****
+21-11-2024 01:08:28 [main] INFO  com.saucedemo.pages.Products$1 - **** Initiated allProductsInfo method in the Products class****
+21-11-2024 01:08:37 [main] INFO  com.saucedemo.pages.Products$1 - **** executing constructor for Products class ****
+21-11-2024 01:08:37 [main] INFO  com.saucedemo.pages.Products$1 - **** Initiated allProductsInfo method in the Products class****
+21-11-2024 01:08:37 [main] INFO  com.saucedemo.pages.Products$1 - **** executing constructor for Products class ****
+21-11-2024 01:08:37 [main] INFO  com.saucedemo.pages.Products$1 - **** Initiated allProductsInfo method in the Products class****
+21-11-2024 01:08:37 [main] INFO  com.saucedemo.pages.Products$1 - **** executing constructor for Products class ****
+21-11-2024 01:08:37 [main] INFO  com.saucedemo.pages.Products$1 - **** Initiated allProductsInfo method in the Products class****
+21-11-2024 01:08:37 [main] INFO  com.saucedemo.pages.Products$1 - **** executing constructor for Products class ****
+21-11-2024 01:08:37 [main] INFO  com.saucedemo.pages.Products$1 - **** Initiated allProductsInfo method in the Products class****
+21-11-2024 01:08:37 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
+21-11-2024 01:08:49 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+21-11-2024 01:08:49 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+21-11-2024 01:08:49 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+21-11-2024 01:08:49 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+21-11-2024 01:08:49 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+21-11-2024 01:08:49 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+21-11-2024 01:08:49 [main] INFO  com.saucedemo.core.BaseClass$1 - **** initiating browser in the initBrowser method ****
+21-11-2024 01:08:49 [main] INFO  com.saucedemo.core.BaseClass$1 - Instance of driver in BaseClass: null
+21-11-2024 01:08:49 [main] INFO  com.saucedemo.core.BaseClass$1 - Browser: chrome
+21-11-2024 01:08:49 [main] INFO  com.saucedemo.core.BaseClass$1 - url: https://www.saucedemo.com/v1/index.html
+21-11-2024 01:08:50 [main] INFO  com.saucedemo.pages.Login$1 - **** executing constructor for Login class ****
+21-11-2024 01:08:50 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate loginPage method ****
+21-11-2024 01:08:50 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate assertLoginPage method ****
+21-11-2024 01:08:51 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****

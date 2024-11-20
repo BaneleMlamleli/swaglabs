@@ -2,6 +2,8 @@ package com.saucedemo.pages;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,7 +27,11 @@ public class SortProducts {
     @FindBy(xpath = "//div[@class='inventory_item_price']")
     List<WebElement> invetoryItemPrices;
 
+    Logger logger = LogManager.getLogger(new Object() {
+    }.getClass().getName());
+
     public SortProducts(WebDriver driver) {
+        logger.info("**** executing constructor for SortProducts class****");
         this.driver = driver;
         PageFactory.initElements(driver, SortProducts.class);
     }

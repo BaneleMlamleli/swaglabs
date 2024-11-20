@@ -1,5 +1,7 @@
 package com.saucedemo.pages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -69,7 +71,11 @@ public class BurgerMenu {
 
     WaitsFactory waitsFactory = new WaitsFactory();
 
+    Logger logger = LogManager.getLogger(new Object() {
+    }.getClass().getName());
+
     public BurgerMenu(WebDriver driver) {
+        logger.info("**** executing constructor for BurgerMenu class****");
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }

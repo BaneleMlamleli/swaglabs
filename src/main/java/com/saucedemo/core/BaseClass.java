@@ -17,8 +17,8 @@ public class BaseClass {
 
     public WebDriver driver;
 
-    public final String BROWSER = new ConfigReader().getProperty("browser");
-    public final String URL = new ConfigReader().getProperty("baseUrl");
+    final String BROWSER = new ConfigReader().getProperty("browser");
+    final String URL = new ConfigReader().getProperty("baseUrl");
 
     public Logger logger = LogManager.getLogger(new Object() {
     }.getClass().getName());
