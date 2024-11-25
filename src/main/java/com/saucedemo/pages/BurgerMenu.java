@@ -17,8 +17,7 @@ import com.saucedemo.utilities.WaitsFactory;
  * The BurgerMenu class represents the burger menu in the e-commerce
  * application.
  * It provides methods to interact with the menu options and perform various
- * actions such as navigating to different pages, logging out, and resetting the
- * application state.
+ * actions such as viewing all items, about page, logout, and reset app state
  * 
  * <p>
  * This class contains methods to perform the following actions:

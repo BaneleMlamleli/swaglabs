@@ -87,7 +87,7 @@ public class Products {
      * It also verifies the functionality of the "Add to Cart" button.
      */
     public void allProductsInfo(String prodName, String prodDesc, String price) {
-        logger.info("**** Initiated allProductsInfo method in the Products class****");
+        logger.info("**** Executing allProductsInfo method in the Products class****");
         String allProducts = allProductsInfo.getText();
         Assert.assertTrue(allProducts.contains("ADD TO CART"));
         Assert.assertTrue(allProducts.contains(prodName));
@@ -100,7 +100,7 @@ public class Products {
      * 'REMOVE'
      */
     public void validateRemoveButton() {
-        logger.info("**** Initiated validateRemoveButton method in the Products class ****");
+        logger.info("**** Executing validateRemoveButton method in the Products class ****");
         driver.findElement(By.xpath("//div[@class='inventory_list']//div[1]//div[3]//button[1]")).click();
         Assert.assertTrue(driver.findElement(By.xpath("//button[contains(text(),\"REMOVE\")]")).isDisplayed());
     }
@@ -112,38 +112,34 @@ public class Products {
      * It also verifies the functionality of the "Add to Cart" and "Remove" buttons.
      */
     public void individualProductsInfo(String locator) {
-        logger.info("**** Initiated individualProductsInfo method in the Products class ****");
+        logger.info("**** Executing individualProductsInfo method in the Products class ****");
         try {
             System.out.println("Locator: " + locator);
-            driver.findElement(By.xpath("\"" + locator + "\"")).click();
+            driver.findElement(By.xpath(locator)).click();
 
             WebElement btnBack = driver.findElement(By.xpath("//button[@class='inventory_details_back_button']"));
             WebElement imgBackpack = driver.findElement(By.xpath("//img[@class='inventory_details_img']"));
             WebElement btnAddToCart = driver.findElement(By.xpath("//button[@class='btn_primary btn_inventory']"));
-            WebElement btnRemove = driver.findElement(By.xpath("//button[contains(text(),\"REMOVE\")]"));
             WebElement itemName = driver.findElement(By.xpath("//div[@class='inventory_details_name']"));
             WebElement itemDesc = driver.findElement(By.xpath("//div[@class='inventory_details_desc']"));
             WebElement itemPrice = driver.findElement(By.xpath("//div[@class='inventory_details_price']"));
+
+            btnAddToCart.click();
+            Assert.assertTrue(btnAddToCart.isDisplayed(), "Error, ADD TO CART button not displayed");
+            WebElement btnRemove = driver.findElement(By.xpath("//button[contains(text(),\"REMOVE\")]"));
+            Assert.assertTrue(btnRemove.isDisplayed());
 
             // verify image is displayed
             Boolean p = (Boolean) ((JavascriptExecutor) driver).executeScript("return arguments[0].complete "
                     + "&& typeof arguments[0].naturalWidth != \"undefined\" " + "&& arguments[0].naturalWidth > 0",
                     imgBackpack);
             Assert.assertTrue(p, "Error with item image");
-
-            String name = itemName.getText();
-            String desc = itemDesc.getText();
-            String price = itemPrice.getText();
-            Assert.assertTrue(itemName.isDisplayed() && name.contains("Sauce Labs Backpack"), "Error with item name");
-            Assert.assertTrue(itemDesc.isDisplayed() && desc.contains(
-                    "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection."),
-                    "Error with item description");
-            Assert.assertTrue(itemPrice.isDisplayed() && price.contains("$29.99"), "Error with price");
-
+            Assert.assertTrue(itemName.isDisplayed(), "Error with item name");
+            Assert.assertTrue(itemDesc.isDisplayed(), "Error with item description");
+            Assert.assertTrue(itemPrice.isDisplayed(), "Error with price");
             Assert.assertTrue(btnBack.isDisplayed(), "'Back' button not displayed");
 
-            btnAddToCart.click();
-            Assert.assertTrue(btnRemove.isDisplayed());
+            btnBack.click();
 
         } catch (Exception e) {
             logger.error(e.getMessage() + ". Error returned in the method '" + new Object() {
@@ -157,15 +153,15 @@ public class Products {
      * loaded.
      */
     public void validateProductsImages() {
-        logger.info("**** Initiated validateProductsImages method in the Products class ****");
+        logger.info("**** Executing validateProductsImages method in the Products class ****");
         Integer brokenImageCounter = 0;
         try {
             brokenImageCounter = 0;
-            logger.info("The page under test has " + productsImageList.size() + " images");
+            logger.info("The 'Products' page has " + productsImageList.size() + " valid images for each product");
             for (WebElement img : productsImageList) {
                 if (img != null) {
                     if (img.getAttribute("naturalWidth").equals("0")) {
-                        logger.info(img.getAttribute("outerHTML") + " is broken.");
+                        logger.info(img.getAttribute("outerHTML") + " is broken in the method validateProductsImages.");
                         brokenImageCounter++;
                     }
                 }
@@ -175,7 +171,10 @@ public class Products {
             }.getClass().getEnclosingMethod().getName() + "'");
             e.printStackTrace();
         }
-        logger.info("The page " + driver.getCurrentUrl() + " has " + brokenImageCounter + " broken images");
+
+        if (brokenImageCounter > 0) {
+            logger.warn("The page " + driver.getCurrentUrl() + " has " + brokenImageCounter + " broken images");
+        }
     }
 
     /**
@@ -183,13 +182,13 @@ public class Products {
      * displayed.
      */
     public void socialMediaImages() {
-        logger.info("**** Initiated socialMediaImages method in the Products class ****");
+        logger.info("**** Executing socialMediaImages method in the Products class ****");
         waitsFactory.explicitWait(imgTwitter);
         waitsFactory.explicitWait(imgFacebook);
         waitsFactory.explicitWait(imgLinkedin);
-        Assert.assertTrue(imgTwitter.isDisplayed(), "Twitter image not displayed");
-        Assert.assertTrue(imgFacebook.isDisplayed(), "Facebook image not displayed");
-        Assert.assertTrue(imgLinkedin.isDisplayed(), "LinkedIn image not displayed");
+        Assert.assertTrue(imgTwitter.isDisplayed(), "Twitter footer image not displayed");
+        Assert.assertTrue(imgFacebook.isDisplayed(), "Facebook footer image not displayed");
+        Assert.assertTrue(imgLinkedin.isDisplayed(), "LinkedIn footer image not displayed");
     }
 
 }

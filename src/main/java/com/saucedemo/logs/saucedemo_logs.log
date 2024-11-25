@@ -1,31 +1,16 @@
-25-11-2024 17:32:54 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:32:54 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:32:54 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:32:54 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:32:54 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:32:54 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:32:54 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:32:54 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:32:54 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:32:54 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:32:54 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:32:54 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:32:54 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:32:54 [main] INFO  com.saucedemo.pages.Login$1 - **** executing constructor for Login class ****
-25-11-2024 17:32:54 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate loginPage method ****
-25-11-2024 17:32:54 [main] INFO  com.saucedemo.pages.Login$1 - **** initiate assertLoginPage method ****
-25-11-2024 17:34:57 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:34:57 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:34:57 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:34:57 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:34:57 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:34:57 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:34:57 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:34:57 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:34:57 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:34:57 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:34:57 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:34:57 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:34:57 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:34:57 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
-25-11-2024 17:34:57 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+26-11-2024 00:16:46 [main] INFO  com.saucedemo.pages.Products$1 - **** executing constructor for Products class ****
+26-11-2024 00:16:46 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing individualProductsInfo method in the Products class ****
+26-11-2024 00:16:46 [main] INFO  com.saucedemo.pages.Products$1 - **** executing constructor for Products class ****
+26-11-2024 00:16:46 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing individualProductsInfo method in the Products class ****
+26-11-2024 00:16:47 [main] INFO  com.saucedemo.pages.Products$1 - **** executing constructor for Products class ****
+26-11-2024 00:16:47 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing individualProductsInfo method in the Products class ****
+26-11-2024 00:16:47 [main] INFO  com.saucedemo.pages.Products$1 - **** executing constructor for Products class ****
+26-11-2024 00:16:47 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing individualProductsInfo method in the Products class ****
+26-11-2024 00:16:48 [main] INFO  com.saucedemo.pages.Products$1 - **** executing constructor for Products class ****
+26-11-2024 00:16:48 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing validateRemoveButton method in the Products class ****
+26-11-2024 00:16:48 [main] INFO  com.saucedemo.pages.Products$1 - **** executing constructor for Products class ****
+26-11-2024 00:16:48 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing validateProductsImages method in the Products class ****
+26-11-2024 00:16:48 [main] INFO  com.saucedemo.pages.Products$1 - The 'Products' page has 6 valid images for each product
+26-11-2024 00:16:48 [main] INFO  com.saucedemo.pages.Products$1 - **** executing constructor for Products class ****
+26-11-2024 00:16:48 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing socialMediaImages method in the Products class ****
+26-11-2024 00:16:48 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
