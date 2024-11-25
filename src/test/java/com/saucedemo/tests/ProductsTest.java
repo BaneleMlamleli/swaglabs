@@ -8,6 +8,7 @@ import com.saucedemo.utilities.TestDataProvider;
 
 public class ProductsTest extends BaseClass {
     // dependsOnGroups = { "tests.LoginTest.successful_login" },
+    // groups = { "validate_all_products_info" },
     @Test(dataProvider = "dtpProductsInfo", dataProviderClass = TestDataProvider.class)
     public void validateAllProductInfo(String productName, String description, String price) {
         new Products(driver).allProductsInfo(productName, description, price);
