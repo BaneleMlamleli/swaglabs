@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestNG Suite" verbose="1" parallel="false">
+    <!-- Define test cases -->
+    <test name="TestNG Tests">
+        <groups>
+            <dependencies>
+                <!-- Functional tests depend on Smoke tests -->
+                <group name="validate_all_products_info" depends-on="successful_login" />
+                <!-- Regression tests depend on Functional tests -->
+                <group name="regression" depends-on="functional" />
+            </dependencies>
+        </groups>
+        <classes>
+            <class name="com.saucemdemo.tests.LoginTest" />
+            <class name="com.saucemdemo.tests.ProductsTest" />
+            <class name="com.saucemdemo.tests.BurgerMenuTest" />
+            <class name="com.saucemdemo.tests.SortProductsTest" />
+            <class name="com.saucemdemo.tests.CartTest" />
+            <class name="com.saucemdemo.tests.CheckoutTest" />
+        </classes>
+    </test>
+</suite>

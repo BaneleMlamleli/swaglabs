@@ -1,5 +1,7 @@
 package com.saucedemo.tests;
 
-class BurgerMenuTest {
+import com.saucedemo.core.BaseClass;
+
+class BurgerMenuTest extends BaseClass {
 
 }

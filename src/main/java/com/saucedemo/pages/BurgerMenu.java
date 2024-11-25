@@ -1,5 +1,7 @@
 package com.saucedemo.pages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,8 +17,7 @@ import com.saucedemo.utilities.WaitsFactory;
  * The BurgerMenu class represents the burger menu in the e-commerce
  * application.
  * It provides methods to interact with the menu options and perform various
- * actions such as navigating to different pages, logging out, and resetting the
- * application state.
+ * actions such as viewing all items, about page, logout, and reset app state
  * 
  * <p>
  * This class contains methods to perform the following actions:
@@ -69,7 +70,11 @@ public class BurgerMenu {
 
     WaitsFactory waitsFactory = new WaitsFactory();
 
+    Logger logger = LogManager.getLogger(new Object() {
+    }.getClass().getName());
+
     public BurgerMenu(WebDriver driver) {
+        logger.info("**** executing constructor for BurgerMenu class****");
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }

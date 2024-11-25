@@ -29,7 +29,7 @@ import org.testng.Assert;
  */
 public class Login {
 
-    public WebDriver driver;
+    WebDriver driver;
 
     @FindBy(id = "user-name")
     public WebElement txtUsername;
@@ -54,10 +54,11 @@ public class Login {
 
     WaitsFactory waitsFactory = new WaitsFactory();
 
-    public Logger logger = LogManager.getLogger(new Object() {
+    Logger logger = LogManager.getLogger(new Object() {
     }.getClass().getName());
 
     public Login(WebDriver driver) {
+        logger.info("**** executing constructor for Login class ****");
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
@@ -82,8 +83,6 @@ public class Login {
         } catch (Exception e) {
             logger.error("'" + e.getMessage() + "' in method '" + new Object() {
             }.getClass().getEnclosingMethod().getName() + "'");
-            System.out.println("'" + e.getMessage() + "' in method '" + new Object() {
-            }.getClass().getEnclosingMethod().getName() + "'");
         }
     }
 
@@ -95,8 +94,6 @@ public class Login {
             btnLogon.click();
         } catch (Exception e) {
             logger.error("'" + e.getMessage() + "' in method '" + new Object() {
-            }.getClass().getEnclosingMethod().getName() + "'");
-            System.out.println("'" + e.getMessage() + "' in method '" + new Object() {
             }.getClass().getEnclosingMethod().getName() + "'");
         }
         return errorMessage.getText();

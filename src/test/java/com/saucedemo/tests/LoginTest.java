@@ -14,12 +14,12 @@ public class LoginTest extends BaseClass {
     String incorrectPassword = "wrongpassword01";
     String incorrectUsername = "wrongUsername";
 
-    @Test
+    @Test(groups = { "successful_login" }, priority = 1)
     public void validLoginDetails() {
         new Login(driver).loginPage(correctUsername, correctPassword);
     }
 
-    @Test
+    @Test(priority = 2)
     public void invalidLoginDetails() {
         for (int i = 0; i <= 6; i++) {
             switch (i) {
