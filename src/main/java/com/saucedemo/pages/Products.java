@@ -69,7 +69,7 @@ public class Products {
     @FindBy(xpath = "//li[@class='social_linkedin']")
     WebElement imgLinkedin;
 
-    WaitsFactory waitsFactory = new WaitsFactory();
+    WaitsFactory waitsFactory;
 
     Logger logger = LogManager.getLogger(new Object() {
     }.getClass().getName());
@@ -77,6 +77,7 @@ public class Products {
     public Products(WebDriver driver) {
         logger.info("**** executing constructor for Products class ****");
         this.driver = driver;
+        waitsFactory = new WaitsFactory(driver);
         PageFactory.initElements(driver, this);
     }
 
@@ -87,7 +88,7 @@ public class Products {
      * It also verifies the functionality of the "Add to Cart" button.
      */
     public void allProductsInfo(String prodName, String prodDesc, String price) {
-        logger.info("**** Executing allProductsInfo method in the Products class****");
+        logger.info("**** Executing allProductsInfo method in the Products class ****");
         String allProducts = allProductsInfo.getText();
         Assert.assertTrue(allProducts.contains("ADD TO CART"));
         Assert.assertTrue(allProducts.contains(prodName));

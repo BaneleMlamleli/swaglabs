@@ -37,6 +37,10 @@ public class WaitsFactory {
 
     WebDriver driver;
 
+    public WaitsFactory(WebDriver driver) {
+        this.driver = driver;
+    }
+
     private static final Logger logger = LogManager.getLogger(new Object() {
     }.getClass().getName());
 

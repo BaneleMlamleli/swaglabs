@@ -51,14 +51,15 @@ public class CheckoutOverview {
     @FindBy(xpath = "//a[@class='btn_action cart_button']")
     WebElement btnFinish;
 
-    WaitsFactory waitsFactory = new WaitsFactory();
+    WaitsFactory waitsFactory;
 
     Logger logger = LogManager.getLogger(new Object() {
     }.getClass().getName());
 
     public CheckoutOverview(WebDriver driver) {
-        logger.info("**** executing constructor for CheckoutOverview class****");
+        logger.info("**** executing constructor for CheckoutOverview class ****");
         this.driver = driver;
+        waitsFactory = new WaitsFactory(driver);
         PageFactory.initElements(driver, CheckoutOverview.class);
     }
 

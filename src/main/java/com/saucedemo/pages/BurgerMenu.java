@@ -65,65 +65,56 @@ public class BurgerMenu {
     @FindBy(id = "login-button")
     protected WebElement btnLogon;
 
-    public String username = new ConfigReader().getProperty("username");
-    public String password = new ConfigReader().getProperty("password");
-
-    WaitsFactory waitsFactory = new WaitsFactory();
+    WaitsFactory waitsFactory;
 
     Logger logger = LogManager.getLogger(new Object() {
     }.getClass().getName());
 
     public BurgerMenu(WebDriver driver) {
-        logger.info("**** executing constructor for BurgerMenu class****");
+        logger.info("**** executing constructor for BurgerMenu class ****");
         this.driver = driver;
+        waitsFactory = new WaitsFactory(this.driver);
         PageFactory.initElements(driver, this);
     }
 
-    public void login() {
-        txtUsername.sendKeys(username);
-        txtPassword.sendKeys(password);
-        btnLogon.click();
-    }
-
-    @Test(dependsOnMethods = "login")
-    public void clickAllItems() {
-        waitsFactory.explicitWait(openMenu);
+    public boolean clickAllItems() {
         openMenu.click();
         waitsFactory.explicitWait(allItems);
         allItems.click();
-        Assert.assertTrue(driver.findElement(By.xpath("//div[@class='product_label']")).isDisplayed(),
-                "Products page not displayed");
+        return driver.findElement(By.xpath("//div[@class='product_label']")).isDisplayed();
     }
 
-    @Test(dependsOnMethods = "login")
-    public void clickAbout() {
-        waitsFactory.explicitWait(openMenu);
+    public String clickAbout() {
         openMenu.click();
         waitsFactory.explicitWaitButtonClickable(about);
         about.click();
-        Assert.assertEquals(driver.getCurrentUrl(), "https://saucelabs.com/");
+        String currentUrl = driver.getCurrentUrl();
+        driver.navigate().back();
+        WebElement closeMenu = driver.findElement(By.xpath("//button[normalize-space()=\"Close Menu\"]"));
+        if (closeMenu.isDisplayed()) {
+            closeMenu.click();
+        }
+        return currentUrl;
     }
 
-    @Test(dependsOnMethods = "login")
-    public void clickLogout() {
-        waitsFactory.explicitWait(openMenu);
+    public boolean clickResetAppState() {
+        btnBackpack.click();
+        boolean cartEmpty = driver.findElement(By.xpath("//span[@class='fa-layers-counter shopping_cart_badge']"))
+                .isDisplayed();
+        openMenu.click();
+        resetAppState.click();
+        WebElement closeMenu = driver.findElement(By.xpath("//button[normalize-space()=\"Close Menu\"]"));
+        if (closeMenu.isDisplayed()) {
+            closeMenu.click();
+        }
+        return cartEmpty;
+    }
+
+    public String clickLogout() {
         openMenu.click();
         waitsFactory.explicitWaitInvisibilityOfElement(logout);
         waitsFactory.explicitWait(logout);
         logout.click();
-        Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/v1/index.html");
-    }
-
-    @Test(dependsOnMethods = "login")
-    public void clickResetAppState() {
-        waitsFactory.explicitWait(openMenu);
-        openMenu.click();
-        waitsFactory.explicitWait(resetAppState);
-        waitsFactory.explicitWaitInvisibilityOfElement(btnBackpack);
-        waitsFactory.explicitWaitButtonClickable(btnBackpack);
-        btnBackpack.click();
-        resetAppState.click();
-        Assert.assertFalse(
-                driver.findElement(By.xpath("//span[@class='fa-layers-counter shopping_cart_badge']")).isDisplayed());
+        return driver.getCurrentUrl();
     }
 }
