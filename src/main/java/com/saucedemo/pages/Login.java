@@ -52,7 +52,7 @@ public class Login {
     @FindBy(xpath = "//h3[@data-test='error']")
     WebElement errorMessage;
 
-    WaitsFactory waitsFactory = new WaitsFactory();
+    WaitsFactory waitsFactory;
 
     Logger logger = LogManager.getLogger(new Object() {
     }.getClass().getName());
@@ -60,6 +60,7 @@ public class Login {
     public Login(WebDriver driver) {
         logger.info("**** executing constructor for Login class ****");
         this.driver = driver;
+        waitsFactory = new WaitsFactory(driver);
         PageFactory.initElements(driver, this);
     }
 

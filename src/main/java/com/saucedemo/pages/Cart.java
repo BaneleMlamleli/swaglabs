@@ -49,14 +49,15 @@ public class Cart {
     @FindBy(xpath = "//div[@class='cart_quantity']")
     List<WebElement> itemQuantity;
 
-    WaitsFactory waitsFactory = new WaitsFactory();
+    WaitsFactory waitsFactory;
 
     Logger logger = LogManager.getLogger(new Object() {
     }.getClass().getName());
 
     public Cart(WebDriver driver) {
-        logger.info("**** executing constructor for Cart class****");
+        logger.info("**** executing constructor for Cart class ****");
         this.driver = driver;
+        waitsFactory = new WaitsFactory(driver);
         PageFactory.initElements(driver, Cart.class);
     }
 

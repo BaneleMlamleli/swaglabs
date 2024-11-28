@@ -1,16 +1,50 @@
-26-11-2024 00:16:46 [main] INFO  com.saucedemo.pages.Products$1 - **** executing constructor for Products class ****
-26-11-2024 00:16:46 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing individualProductsInfo method in the Products class ****
-26-11-2024 00:16:46 [main] INFO  com.saucedemo.pages.Products$1 - **** executing constructor for Products class ****
-26-11-2024 00:16:46 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing individualProductsInfo method in the Products class ****
-26-11-2024 00:16:47 [main] INFO  com.saucedemo.pages.Products$1 - **** executing constructor for Products class ****
-26-11-2024 00:16:47 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing individualProductsInfo method in the Products class ****
-26-11-2024 00:16:47 [main] INFO  com.saucedemo.pages.Products$1 - **** executing constructor for Products class ****
-26-11-2024 00:16:47 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing individualProductsInfo method in the Products class ****
-26-11-2024 00:16:48 [main] INFO  com.saucedemo.pages.Products$1 - **** executing constructor for Products class ****
-26-11-2024 00:16:48 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing validateRemoveButton method in the Products class ****
-26-11-2024 00:16:48 [main] INFO  com.saucedemo.pages.Products$1 - **** executing constructor for Products class ****
-26-11-2024 00:16:48 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing validateProductsImages method in the Products class ****
-26-11-2024 00:16:48 [main] INFO  com.saucedemo.pages.Products$1 - The 'Products' page has 6 valid images for each product
-26-11-2024 00:16:48 [main] INFO  com.saucedemo.pages.Products$1 - **** executing constructor for Products class ****
-26-11-2024 00:16:48 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing socialMediaImages method in the Products class ****
-26-11-2024 00:16:48 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
+28-11-2024 22:52:57 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
+28-11-2024 22:54:00 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+28-11-2024 22:54:00 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+28-11-2024 22:54:00 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+28-11-2024 22:54:00 [main] INFO  com.saucedemo.core.BaseClass$1 - **** initiating browser in the initBrowser method ****
+28-11-2024 22:54:00 [main] INFO  com.saucedemo.core.BaseClass$1 - Instance of driver in BaseClass: null
+28-11-2024 22:54:00 [main] INFO  com.saucedemo.core.BaseClass$1 - Browser: chrome
+28-11-2024 22:54:00 [main] INFO  com.saucedemo.core.BaseClass$1 - url: https://www.saucedemo.com/v1/inventory.html
+28-11-2024 22:54:03 [main] INFO  com.saucedemo.pages.BurgerMenu$1 - **** executing constructor for BurgerMenu class ****
+28-11-2024 22:54:10 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
+28-11-2024 22:54:51 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+28-11-2024 22:54:51 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+28-11-2024 22:54:51 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+28-11-2024 22:54:51 [main] INFO  com.saucedemo.core.BaseClass$1 - **** initiating browser in the initBrowser method ****
+28-11-2024 22:54:51 [main] INFO  com.saucedemo.core.BaseClass$1 - Instance of driver in BaseClass: null
+28-11-2024 22:54:51 [main] INFO  com.saucedemo.core.BaseClass$1 - Browser: chrome
+28-11-2024 22:54:51 [main] INFO  com.saucedemo.core.BaseClass$1 - url: https://www.saucedemo.com/v1/inventory.html
+28-11-2024 22:54:52 [main] INFO  com.saucedemo.pages.BurgerMenu$1 - **** executing constructor for BurgerMenu class ****
+28-11-2024 22:54:58 [main] INFO  com.saucedemo.pages.BurgerMenu$1 - **** executing constructor for BurgerMenu class ****
+28-11-2024 22:54:59 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
+28-11-2024 22:58:12 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+28-11-2024 22:58:12 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+28-11-2024 22:58:12 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+28-11-2024 22:58:12 [main] INFO  com.saucedemo.core.BaseClass$1 - **** initiating browser in the initBrowser method ****
+28-11-2024 22:58:12 [main] INFO  com.saucedemo.core.BaseClass$1 - Instance of driver in BaseClass: null
+28-11-2024 22:58:12 [main] INFO  com.saucedemo.core.BaseClass$1 - Browser: chrome
+28-11-2024 22:58:12 [main] INFO  com.saucedemo.core.BaseClass$1 - url: https://www.saucedemo.com/v1/inventory.html
+28-11-2024 22:58:14 [main] INFO  com.saucedemo.pages.BurgerMenu$1 - **** executing constructor for BurgerMenu class ****
+28-11-2024 22:58:22 [main] INFO  com.saucedemo.pages.BurgerMenu$1 - **** executing constructor for BurgerMenu class ****
+28-11-2024 22:58:23 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
+28-11-2024 22:59:41 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+28-11-2024 22:59:41 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+28-11-2024 22:59:41 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+28-11-2024 22:59:41 [main] INFO  com.saucedemo.core.BaseClass$1 - **** initiating browser in the initBrowser method ****
+28-11-2024 22:59:41 [main] INFO  com.saucedemo.core.BaseClass$1 - Instance of driver in BaseClass: null
+28-11-2024 22:59:41 [main] INFO  com.saucedemo.core.BaseClass$1 - Browser: chrome
+28-11-2024 22:59:41 [main] INFO  com.saucedemo.core.BaseClass$1 - url: https://www.saucedemo.com/v1/inventory.html
+28-11-2024 22:59:42 [main] INFO  com.saucedemo.pages.BurgerMenu$1 - **** executing constructor for BurgerMenu class ****
+28-11-2024 22:59:43 [main] INFO  com.saucedemo.pages.BurgerMenu$1 - **** executing constructor for BurgerMenu class ****
+28-11-2024 22:59:50 [main] INFO  com.saucedemo.pages.BurgerMenu$1 - **** executing constructor for BurgerMenu class ****
+28-11-2024 22:59:51 [main] INFO  com.saucedemo.pages.BurgerMenu$1 - **** executing constructor for BurgerMenu class ****
+28-11-2024 22:59:57 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
