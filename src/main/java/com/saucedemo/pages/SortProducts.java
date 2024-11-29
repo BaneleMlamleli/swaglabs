@@ -9,11 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
 
-/**
- * SortProducts
- */
 public class SortProducts {
 
         WebDriver driver;
@@ -22,10 +18,10 @@ public class SortProducts {
         WebElement cmbSort;
 
         @FindBy(xpath = "//div[@class='inventory_item_name']")
-        List<WebElement> invetoryItemNames;
+        List<WebElement> inventoryItemNames;
 
         @FindBy(xpath = "//div[@class='inventory_item_price']")
-        List<WebElement> invetoryItemPrices;
+        List<WebElement> inventoryItemPrices;
 
         Logger logger = LogManager.getLogger(new Object() {
         }.getClass().getName());
@@ -33,70 +29,39 @@ public class SortProducts {
         public SortProducts(WebDriver driver) {
                 logger.info("**** executing constructor for SortProducts class ****");
                 this.driver = driver;
-                PageFactory.initElements(driver, SortProducts.class);
+                PageFactory.initElements(driver, this);
         }
 
-        public void sortFromAtoZ() {
+        public List<WebElement> sortFromAtoZ() {
+                logger.info("**** executing sortFromAtoZ method for SortProducts class ****");
                 Select sortByName = new Select(cmbSort);
+                cmbSort.click();
                 sortByName.selectByValue("az");
-                Assert.assertTrue(invetoryItemNames.get(0).getText().equals("Sauce Labs Backpack"),
-                                "Items not sorted from A to Z");
-                Assert.assertTrue(invetoryItemNames.get(1).getText().equals("Sauce Labs Bike Light"),
-                                "Items not sorted from A to Z");
-                Assert.assertTrue(invetoryItemNames.get(2).getText().equals("Sauce Labs Bolt T-Shirt"),
-                                "Items not sorted from A to Z");
-                Assert.assertTrue(invetoryItemNames.get(3).getText().equals("Sauce Labs Fleece Jacket"),
-                                "Items not sorted from A to Z");
-                Assert.assertTrue(invetoryItemNames.get(4).getText().equals("Sauce Labs Onesie"),
-                                "Items not sorted from A to Z");
-                Assert.assertTrue(invetoryItemNames.get(5).getText().equals("Test.allTheThings() T-Shirt (Red)"),
-                                "Items not sorted from A to Z");
+                return inventoryItemNames;
         }
 
-        public void sortFromZtoA() {
+        public List<WebElement> sortFromZtoA() {
+                logger.info("**** executing sortFromZtoA method for SortProducts class ****");
                 Select sortByName = new Select(cmbSort);
+                cmbSort.click();
                 sortByName.selectByValue("za");
-                Assert.assertTrue(invetoryItemNames.get(0).getText().equals("Test.allTheThings() T-Shirt (Red)"),
-                                "Items not sorted from Z to A");
-                Assert.assertTrue(invetoryItemNames.get(1).getText().equals("Sauce Labs Onesie"),
-                                "Items not sorted from Z to A");
-                Assert.assertTrue(invetoryItemNames.get(2).getText().equals("Sauce Labs Fleece Jacket"),
-                                "Items not sorted from Z to A");
-                Assert.assertTrue(invetoryItemNames.get(3).getText().equals("Sauce Labs Bolt T-Shirt"),
-                                "Items not sorted from Z to A");
-                Assert.assertTrue(invetoryItemNames.get(4).getText().equals("Sauce Labs Bike Light"),
-                                "Items not sorted from Z to A");
-                Assert.assertTrue(invetoryItemNames.get(5).getText().equals("Sauce Labs Backpack"),
-                                "Items not sorted from Z to A");
+                return inventoryItemNames;
         }
 
-        public void sortFromLowToHigh() {
+        public List<WebElement> sortFromLowToHigh() {
+                logger.info("**** executing sortFroLowToHigh method for SortProducts class ****");
                 Select sortByPrice = new Select(cmbSort);
-                sortByPrice.selectByValue("lohi");
-                Assert.assertTrue(invetoryItemPrices.get(0).getText().equals("S$7.99"),
-                                "Item prices not sorted from Low to High");
-                Assert.assertTrue(invetoryItemPrices.get(1).getText().equals("$9.99"),
-                                "Item prices not sorted from Low to High");
-                Assert.assertTrue(invetoryItemPrices.get(2).getText().equals("$15.99"),
-                                "Item prices not sorted from Low to High");
-                Assert.assertTrue(invetoryItemPrices.get(3).getText().equals("$29.99"),
-                                "Item prices not sorted from Low to High");
-                Assert.assertTrue(invetoryItemPrices.get(4).getText().equals("$49.99"),
-                                "Item prices not sorted from Low to High");
+                cmbSort.click();
+                sortByPrice.selectByVisibleText("Price (low to high)");
+                return inventoryItemPrices;
         }
 
-        public void sortFromHighToLow() {
+        public List<WebElement> sortFromHighToLow() {
+                logger.info("**** executing sortFromHighToLow method for SortProducts class ****");
                 Select sortByPrice = new Select(cmbSort);
-                sortByPrice.selectByValue("hilo");
-                Assert.assertTrue(invetoryItemPrices.get(0).getText().equals("$49.99"),
-                                "Item prices not sorted from High to Low");
-                Assert.assertTrue(invetoryItemPrices.get(0).getText().equals("$29.99"),
-                                "Item prices not sorted from High to Low");
-                Assert.assertTrue(invetoryItemPrices.get(0).getText().equals("$15.99"),
-                                "Item prices not sorted from High to Low");
-                Assert.assertTrue(invetoryItemPrices.get(0).getText().equals("$9.99"),
-                                "Item prices not sorted from High to Low");
-                Assert.assertTrue(invetoryItemPrices.get(0).getText().equals("$7.99"),
-                                "Item prices not sorted from High to Low");
+                cmbSort.click();
+                sortByPrice.selectByVisibleText("Price (high to low)");
+                return inventoryItemPrices;
         }
+
 }
