@@ -1,5 +1,45 @@
-30-11-2024 00:14:26 [main] INFO  com.saucedemo.pages.SortProducts$1 - **** executing constructor for SortProducts class ****
-30-11-2024 00:14:26 [main] INFO  com.saucedemo.pages.SortProducts$1 - **** executing sortFroLowToHigh method for SortProducts class ****
-30-11-2024 00:14:27 [main] INFO  com.saucedemo.pages.SortProducts$1 - **** executing constructor for SortProducts class ****
-30-11-2024 00:14:27 [main] INFO  com.saucedemo.pages.SortProducts$1 - **** executing sortFromZtoA method for SortProducts class ****
-30-11-2024 00:14:27 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
+02-12-2024 00:06:45 [main] INFO  com.saucedemo.pages.Cart$1 - **** executing constructor for Cart class ****
+02-12-2024 00:06:45 [main] INFO  com.saucedemo.pages.Cart$1 - **** initiate validateSpanItemIsDisplayed method ****
+02-12-2024 00:06:46 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
+02-12-2024 00:07:59 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+02-12-2024 00:07:59 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+02-12-2024 00:07:59 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+02-12-2024 00:07:59 [main] INFO  com.saucedemo.core.BaseClass$1 - **** initiating browser in the initBrowser method ****
+02-12-2024 00:07:59 [main] INFO  com.saucedemo.core.BaseClass$1 - Instance of driver in BaseClass: null
+02-12-2024 00:07:59 [main] INFO  com.saucedemo.core.BaseClass$1 - Browser: chrome
+02-12-2024 00:07:59 [main] INFO  com.saucedemo.core.BaseClass$1 - url: https://www.saucedemo.com/v1/inventory.html
+02-12-2024 00:08:01 [main] INFO  com.saucedemo.pages.Cart$1 - **** executing constructor for Cart class ****
+02-12-2024 00:08:01 [main] INFO  com.saucedemo.pages.Cart$1 - **** initiate validateSpanItemIsDisplayed method ****
+02-12-2024 00:08:01 [main] INFO  com.saucedemo.pages.Cart$1 - **** executing constructor for Cart class ****
+02-12-2024 00:08:01 [main] INFO  com.saucedemo.pages.Cart$1 - **** initiate clickCartWithItems method ****
+02-12-2024 00:08:01 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
+02-12-2024 00:08:18 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+02-12-2024 00:08:18 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+02-12-2024 00:08:18 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+02-12-2024 00:08:18 [main] INFO  com.saucedemo.core.BaseClass$1 - **** initiating browser in the initBrowser method ****
+02-12-2024 00:08:18 [main] INFO  com.saucedemo.core.BaseClass$1 - Instance of driver in BaseClass: null
+02-12-2024 00:08:18 [main] INFO  com.saucedemo.core.BaseClass$1 - Browser: chrome
+02-12-2024 00:08:18 [main] INFO  com.saucedemo.core.BaseClass$1 - url: https://www.saucedemo.com/v1/inventory.html
+02-12-2024 00:08:20 [main] INFO  com.saucedemo.pages.Cart$1 - **** executing constructor for Cart class ****
+02-12-2024 00:08:20 [main] INFO  com.saucedemo.pages.Cart$1 - **** initiate validateSpanItemIsDisplayed method ****
+02-12-2024 00:08:20 [main] INFO  com.saucedemo.pages.Cart$1 - **** executing constructor for Cart class ****
+02-12-2024 00:08:20 [main] INFO  com.saucedemo.pages.Cart$1 - **** initiate clickCartWithItems method ****
+02-12-2024 00:08:20 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
+02-12-2024 00:08:31 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+02-12-2024 00:08:31 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** initiate getProperty method in ConfigReader class ****
+02-12-2024 00:08:31 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+02-12-2024 00:08:31 [main] INFO  com.saucedemo.core.BaseClass$1 - **** initiating browser in the initBrowser method ****
+02-12-2024 00:08:31 [main] INFO  com.saucedemo.core.BaseClass$1 - Instance of driver in BaseClass: null
+02-12-2024 00:08:31 [main] INFO  com.saucedemo.core.BaseClass$1 - Browser: chrome
+02-12-2024 00:08:31 [main] INFO  com.saucedemo.core.BaseClass$1 - url: https://www.saucedemo.com/v1/inventory.html
+02-12-2024 00:08:33 [main] INFO  com.saucedemo.pages.Cart$1 - **** executing constructor for Cart class ****
+02-12-2024 00:08:33 [main] INFO  com.saucedemo.pages.Cart$1 - **** initiate validateSpanItemIsDisplayed method ****
+02-12-2024 00:08:33 [main] INFO  com.saucedemo.pages.Cart$1 - **** executing constructor for Cart class ****
+02-12-2024 00:08:33 [main] INFO  com.saucedemo.pages.Cart$1 - **** initiate clickCartWithItems method ****
+02-12-2024 00:08:33 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****

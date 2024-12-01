@@ -58,10 +58,20 @@ public class Cart {
         logger.info("**** executing constructor for Cart class ****");
         this.driver = driver;
         waitsFactory = new WaitsFactory(driver);
-        PageFactory.initElements(driver, Cart.class);
+        PageFactory.initElements(driver, this);
+    }
+
+    public void validateSpanItemIsDisplayed() {
+        logger.info("**** initiate validateSpanItemIsDisplayed method ****");
+        waitsFactory.explicitWaitButtonClickable(btnBackpack);
+
+        btnBackpack.click();
+        waitsFactory.explicitWait(spnItemsSelected);
+        Assert.assertTrue(spnItemsSelected.isDisplayed(), "No item/s in the span element");
     }
 
     public void clickCartWithItems() {
+        logger.info("**** initiate clickCartWithItems method ****");
         waitsFactory.explicitWait(cart);
         waitsFactory.explicitWaitButtonClickable(cart);
         Assert.assertTrue(cart.isDisplayed(), "Cart element not visible or actionable");
@@ -75,13 +85,4 @@ public class Cart {
                 "The amount of items does not match the amount specified in shopping cart item counter");
 
     }
-
-    public void validateSpanItemIsDisplayed() {
-        waitsFactory.explicitWaitButtonClickable(btnBackpack);
-
-        btnBackpack.click();
-        waitsFactory.explicitWait(spnItemsSelected);
-        Assert.assertTrue(spnItemsSelected.isDisplayed(), "No item/s in the span element");
-    }
-
 }
