@@ -7,12 +7,12 @@ import com.saucedemo.pages.Cart;
 
 public class CartTest extends BaseClass {
 
-    @Test(priority = 1)
+    @Test(priority = 1, groups = { "CartTest.validateSpanIsDisplayed" })
     public void validateSpanIsDisplayed() {
         new Cart(driver).validateSpanItemIsDisplayed();
     }
 
-    @Test(priority = 2)
+    @Test(dependsOnMethods = "validateSpanIsDisplayed", groups = { "CartTest.validateCartWithItems" })
     public void validateCartWithItems() {
         new Cart(driver).clickCartWithItems();
     }

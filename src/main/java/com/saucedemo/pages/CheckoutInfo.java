@@ -14,7 +14,7 @@ import com.saucedemo.utilities.WaitsFactory;
 /**
  * Checkout
  */
-public class Checkout {
+public class CheckoutInfo {
 
     WebDriver driver;
 
@@ -47,8 +47,8 @@ public class Checkout {
     Logger logger = LogManager.getLogger(new Object() {
     }.getClass().getName());
 
-    public Checkout(WebDriver driver) {
-        logger.info("**** executing constructor for Checkout class ****");
+    public CheckoutInfo(WebDriver driver) {
+        logger.info("**** Executing constructor for Checkout class ****");
         this.driver = driver;
         waitsFactory = new WaitsFactory(driver);
         PageFactory.initElements(driver, this);

@@ -28,7 +28,7 @@ public class ConfigReader {
     }
 
     public String getProperty(String key) {
-        logger.info("**** initiate getProperty method in ConfigReader class ****");
+        logger.info("**** Executing getProperty method in ConfigReader class ****");
         return properties.getProperty(key);
     }
 

@@ -58,14 +58,14 @@ public class Login {
     }.getClass().getName());
 
     public Login(WebDriver driver) {
-        logger.info("**** executing constructor for Login class ****");
+        logger.info("**** Executing constructor for Login class ****");
         this.driver = driver;
         waitsFactory = new WaitsFactory(driver);
         PageFactory.initElements(driver, this);
     }
 
     public void assertLoginPage() {
-        logger.info("**** initiate assertLoginPage method ****");
+        logger.info("**** Executing assertLoginPage method ****");
         waitsFactory.explicitWait(imgLoginLogo);
         waitsFactory.explicitWait(txtPassword);
         waitsFactory.explicitWait(txtPassword);
@@ -75,7 +75,7 @@ public class Login {
     }
 
     public void loginPage(String correctUsername, String correctPassword) {
-        logger.info("**** initiate loginPage method ****");
+        logger.info("**** Executing loginPage method ****");
         assertLoginPage();
         try {
             txtUsername.sendKeys(correctUsername);
@@ -88,7 +88,7 @@ public class Login {
     }
 
     public String verifyLoginPage(String username, String password) {
-        logger.info("**** initiate verifyLoginPage method ****");
+        logger.info("**** Executing verifyLoginPage method ****");
         try {
             txtUsername.sendKeys(username);
             txtPassword.sendKeys(password);

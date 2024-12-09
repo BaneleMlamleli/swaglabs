@@ -57,7 +57,7 @@ public class CheckoutOverview {
     }.getClass().getName());
 
     public CheckoutOverview(WebDriver driver) {
-        logger.info("**** executing constructor for CheckoutOverview class ****");
+        logger.info("**** Executing constructor for CheckoutOverview class ****");
         this.driver = driver;
         waitsFactory = new WaitsFactory(driver);
         PageFactory.initElements(driver, CheckoutOverview.class);

@@ -75,7 +75,7 @@ public class Products {
     }.getClass().getName());
 
     public Products(WebDriver driver) {
-        logger.info("**** executing constructor for Products class ****");
+        logger.info("**** Executing constructor for Products class ****");
         this.driver = driver;
         waitsFactory = new WaitsFactory(driver);
         PageFactory.initElements(driver, this);
