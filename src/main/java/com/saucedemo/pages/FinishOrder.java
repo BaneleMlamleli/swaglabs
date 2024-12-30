@@ -70,11 +70,8 @@ public class FinishOrder {
          */
         public void verifyOrderCompletion() {
                 logger.info("**** Executing verifyOrderCompletion method in the FinishOrder class ****");
+                waitsFactory.explicitWait(imgPonyExpressSauceLabs);
                 String checkoutCompleteUrl = driver.getCurrentUrl();
-                Assert.assertTrue(
-                                checkoutCompleteUrl.equalsIgnoreCase(
-                                                "https://www.saucedemo.com/v1/checkout-complete.html"),
-                                "Incorrect url for 'Finish' page");
                 Assert.assertTrue(txtFinish.getText().equalsIgnoreCase("Finish"),
                                 "Error, 'Finish' header not displayed");
                 Assert.assertTrue(txtThankYouMessage.getText().equalsIgnoreCase("THANK YOU FOR YOUR ORDER"),
@@ -83,7 +80,10 @@ public class FinishOrder {
                                 txtMessage.getText().equalsIgnoreCase(
                                                 "Your order has been dispatched, and will arrive just as fast as the pony can get there!"),
                                 "Error, '...order has been dispatched...' message not displayed");
-                // waitsFactory.explicitWait(imgPonyExpressSauceLabs);
                 Assert.assertTrue(imgPonyExpressSauceLabs.isDisplayed(), "Error, image not displayed");
+                Assert.assertTrue(
+                                checkoutCompleteUrl.equalsIgnoreCase(
+                                                "https://www.saucedemo.com/v1/checkout-complete.html"),
+                                "Incorrect url for 'Finish' page");
         }
 }

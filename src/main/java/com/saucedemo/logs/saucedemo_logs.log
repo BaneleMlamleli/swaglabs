@@ -1,16 +1,18 @@
-30-12-2024 17:55:04 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
-30-12-2024 17:55:04 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
-30-12-2024 17:55:04 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
-30-12-2024 17:55:04 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
-30-12-2024 17:55:04 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
-30-12-2024 17:55:04 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
-30-12-2024 17:55:04 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
-30-12-2024 17:55:04 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
-30-12-2024 17:55:04 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
-30-12-2024 17:55:04 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
-30-12-2024 17:55:04 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
-30-12-2024 17:55:04 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
-30-12-2024 17:55:04 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
-30-12-2024 17:55:05 [main] WARN  com.saucedemo.core.BaseClass$1 - *** Exception error ***
-30-12-2024 17:55:05 [main] INFO  com.saucedemo.core.BaseClass$1 - java.lang.reflect.InvocationTargetException
-30-12-2024 17:55:05 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
+31-12-2024 00:58:28 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+31-12-2024 00:58:28 [main] INFO  com.saucedemo.core.BaseClass$1 - **** initiating browser in the initBrowser method ****
+31-12-2024 00:58:28 [main] INFO  com.saucedemo.core.BaseClass$1 - Instance of driver in BaseClass: null
+31-12-2024 00:58:28 [main] INFO  com.saucedemo.core.BaseClass$1 - Browser: chrome
+31-12-2024 00:58:28 [main] INFO  com.saucedemo.core.BaseClass$1 - url: https://www.saucedemo.com/v1/index.html
+31-12-2024 00:58:30 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
+31-12-2024 00:58:30 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
+31-12-2024 00:58:30 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing constructor for Login class ****
+31-12-2024 00:58:30 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing loginPage method ****
+31-12-2024 00:58:30 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing assertLoginPage method ****
+31-12-2024 00:58:31 [main] INFO  com.saucedemo.pages.CheckoutInfo$1 - **** Executing constructor for Checkout class ****
+31-12-2024 00:58:32 [main] INFO  com.saucedemo.pages.FinishOrder$1 - **** Executing constructor for FinishOrder class ****
+31-12-2024 00:58:32 [main] INFO  com.saucedemo.pages.FinishOrder$1 - **** Executing verifyOrderCompletion method in the FinishOrder class ****
+31-12-2024 00:58:52 [main] WARN  com.saucedemo.core.BaseClass$1 - *** Exception error ***
+31-12-2024 00:58:52 [main] INFO  com.saucedemo.core.BaseClass$1 - Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //img[@class='pony_express']' (tried for 10 second(s) with 500 milliseconds interval)
+31-12-2024 00:58:52 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
