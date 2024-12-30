@@ -25,7 +25,7 @@ public class CheckoutInfo {
     WebElement txtLastname;
 
     @FindBy(id = "postal-code")
-    WebElement txtPostalcode;
+    WebElement txtPostalCode;
 
     @FindBy(xpath = "//a[normalize-space()='CANCEL']")
     WebElement btnCancel;
@@ -76,7 +76,7 @@ public class CheckoutInfo {
         waitsFactory.explicitWait(btnContinue);
         txtFirstname.sendKeys(name);
         txtLastname.sendKeys(surname);
-        txtPostalcode.sendKeys(postalCode);
+        txtPostalCode.sendKeys(postalCode);
         btnContinue.click();
         Assert.assertTrue(
                 driver.getCurrentUrl().equalsIgnoreCase("https://www.saucedemo.com/v1/checkout-step-two.html"));

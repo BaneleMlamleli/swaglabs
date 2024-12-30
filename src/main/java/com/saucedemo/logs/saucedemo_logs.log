@@ -1,29 +1,30 @@
-10-12-2024 01:05:39 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  Command line suite
-
-10-12-2024 01:05:39 [main] INFO  com.saucedemo.core.BaseClass$1 - **** initiating browser in the initBrowser method ****
-10-12-2024 01:05:39 [main] INFO  com.saucedemo.core.BaseClass$1 - Instance of driver in BaseClass: null
-10-12-2024 01:05:39 [main] INFO  com.saucedemo.core.BaseClass$1 - Browser: chrome
-10-12-2024 01:05:39 [main] INFO  com.saucedemo.core.BaseClass$1 - url: https://www.saucedemo.com/v1/inventory.html
-10-12-2024 01:05:41 [main] INFO  com.saucedemo.pages.CheckoutInfo$1 - **** Executing constructor for Checkout class ****
-10-12-2024 01:05:42 [main] INFO  com.saucedemo.pages.CheckoutInfo$1 - **** Executing constructor for Checkout class ****
-10-12-2024 01:06:06 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
-10-12-2024 01:06:06 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
-10-12-2024 01:06:06 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  Command line suite
-
-10-12-2024 01:06:06 [main] INFO  com.saucedemo.core.BaseClass$1 - **** initiating browser in the initBrowser method ****
-10-12-2024 01:06:06 [main] INFO  com.saucedemo.core.BaseClass$1 - Instance of driver in BaseClass: null
-10-12-2024 01:06:06 [main] INFO  com.saucedemo.core.BaseClass$1 - Browser: chrome
-10-12-2024 01:06:06 [main] INFO  com.saucedemo.core.BaseClass$1 - url: https://www.saucedemo.com/v1/inventory.html
-10-12-2024 01:06:08 [main] INFO  com.saucedemo.pages.CheckoutInfo$1 - **** Executing constructor for Checkout class ****
-10-12-2024 01:06:13 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
-10-12-2024 01:06:13 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
-10-12-2024 01:06:13 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  Command line suite
-
-10-12-2024 01:06:13 [main] INFO  com.saucedemo.core.BaseClass$1 - **** initiating browser in the initBrowser method ****
-10-12-2024 01:06:13 [main] INFO  com.saucedemo.core.BaseClass$1 - Instance of driver in BaseClass: null
-10-12-2024 01:06:13 [main] INFO  com.saucedemo.core.BaseClass$1 - Browser: chrome
-10-12-2024 01:06:13 [main] INFO  com.saucedemo.core.BaseClass$1 - url: https://www.saucedemo.com/v1/inventory.html
-10-12-2024 01:06:16 [main] INFO  com.saucedemo.pages.CheckoutInfo$1 - **** Executing constructor for Checkout class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+29-12-2024 23:45:24 [main] WARN  com.saucedemo.core.BaseClass$1 - *** Exception error ***
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.core.BaseClass$1 - java.lang.reflect.InvocationTargetException
+29-12-2024 23:45:24 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****

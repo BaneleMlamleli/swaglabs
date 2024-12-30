@@ -7,11 +7,21 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.saucedemo.core.BaseClass;
+import com.saucedemo.pages.Login;
 import com.saucedemo.pages.SortProducts;
+import com.saucedemo.utilities.ConfigReader;
 
 public class SortProductsTest extends BaseClass {
 
-        @Test
+        @Test(priority = 1)
+        public void login() {
+                String correctUsername = new ConfigReader().getProperty("standard_user");
+                String correctPassword = new ConfigReader().getProperty("password");
+                Login login = new Login(driver);
+                login.loginPage(correctUsername, correctPassword);
+        }
+
+        @Test(priority = 2)
         public void executeSortFromAtoZ() {
                 List<WebElement> inventoryItemNames = new SortProducts(driver).sortFromAtoZ();
                 Assert.assertTrue(inventoryItemNames.get(0).getText().equals("Sauce Labs Backpack"),
@@ -28,7 +38,7 @@ public class SortProductsTest extends BaseClass {
                                 "Items not sorted from A to Z");
         }
 
-        @Test
+        @Test(priority = 3)
         public void executeSortFromZtoA() {
                 List<WebElement> inventoryItemNames = new SortProducts(driver).sortFromZtoA();
                 Assert.assertTrue(inventoryItemNames.get(0).getText().equals("Test.allTheThings() T-Shirt (Red)"),
@@ -45,7 +55,7 @@ public class SortProductsTest extends BaseClass {
                                 "Items not sorted from Z to A");
         }
 
-        @Test
+        @Test(priority = 4)
         public void executeSortFromLowToHigh() {
                 List<WebElement> inventoryItemPrices = new SortProducts(driver).sortFromLowToHigh();
                 Assert.assertTrue(inventoryItemPrices.get(0).getText().equals("$7.99"),
@@ -62,7 +72,7 @@ public class SortProductsTest extends BaseClass {
                                 "Item prices not sorted from Low to High");
         }
 
-        @Test
+        @Test(priority = 5)
         public void executeSortFromHighToLow() {
                 List<WebElement> inventoryItemPrices = new SortProducts(driver).sortFromHighToLow();
                 Assert.assertTrue(inventoryItemPrices.get(0).getText().equals("$49.99"),
