@@ -61,9 +61,7 @@ public class CheckoutInfo {
     }
 
     public void cancelCheckoutUserInfo() {
-        btnBackpack.click();
-        btnCart.click();
-        btnCheckout.click();
+        driver.navigate().back();
         waitsFactory.explicitWait(btnCancel);
         btnCancel.click();
         boolean btnContinueShoppintIsDisplayed = driver.findElement(By.xpath("//a[@class='btn_secondary']"))

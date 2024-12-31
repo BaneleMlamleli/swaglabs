@@ -1,22 +1,20 @@
-31-12-2024 17:35:44 [main] WARN  com.saucedemo.core.BaseClass$1 - For input string: "tem total: $29.99"
-31-12-2024 17:35:44 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
-31-12-2024 17:37:38 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
-31-12-2024 17:37:38 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
-31-12-2024 17:37:39 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+31-12-2024 18:02:38 [main] INFO  com.saucedemo.pages.CheckoutInfo$1 - **** Executing constructor for Checkout class ****
+31-12-2024 18:02:40 [main] INFO  com.saucedemo.pages.CheckoutInfo$1 - **** Executing constructor for Checkout class ****
+31-12-2024 18:02:50 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
+31-12-2024 18:04:35 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
+31-12-2024 18:04:35 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
+31-12-2024 18:04:35 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   Command line suite
 
-31-12-2024 17:37:39 [main] INFO  com.saucedemo.core.BaseClass$1 - **** initiating browser in the initBrowser method ****
-31-12-2024 17:37:39 [main] INFO  com.saucedemo.core.BaseClass$1 - Instance of driver in BaseClass: null
-31-12-2024 17:37:39 [main] INFO  com.saucedemo.core.BaseClass$1 - Browser: chrome
-31-12-2024 17:37:39 [main] INFO  com.saucedemo.core.BaseClass$1 - url: https://www.saucedemo.com/v1/index.html
-31-12-2024 17:37:41 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
-31-12-2024 17:37:41 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
-31-12-2024 17:37:41 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing constructor for Login class ****
-31-12-2024 17:37:41 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing loginPage method ****
-31-12-2024 17:37:41 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing assertLoginPage method ****
-31-12-2024 17:37:42 [main] INFO  com.saucedemo.pages.CheckoutInfo$1 - **** Executing constructor for Checkout class ****
-31-12-2024 17:37:43 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
-31-12-2024 17:37:43 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing validateCheckoutInformation method in the CheckoutOverview class ****
-31-12-2024 17:37:44 [main] WARN  com.saucedemo.core.BaseClass$1 - *** Exception error ***
-31-12-2024 17:37:44 [main] WARN  com.saucedemo.core.BaseClass$1 - For input string: "tem total: $55.97"
-31-12-2024 17:37:44 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
+31-12-2024 18:04:35 [main] INFO  com.saucedemo.core.BaseClass$1 - **** initiating browser in the initBrowser method ****
+31-12-2024 18:04:35 [main] INFO  com.saucedemo.core.BaseClass$1 - Instance of driver in BaseClass: null
+31-12-2024 18:04:35 [main] INFO  com.saucedemo.core.BaseClass$1 - Browser: chrome
+31-12-2024 18:04:35 [main] INFO  com.saucedemo.core.BaseClass$1 - url: https://www.saucedemo.com/v1/index.html
+31-12-2024 18:04:38 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
+31-12-2024 18:04:38 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
+31-12-2024 18:04:38 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing constructor for Login class ****
+31-12-2024 18:04:38 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing loginPage method ****
+31-12-2024 18:04:38 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing assertLoginPage method ****
+31-12-2024 18:04:40 [main] INFO  com.saucedemo.pages.CheckoutInfo$1 - **** Executing constructor for Checkout class ****
+31-12-2024 18:04:41 [main] INFO  com.saucedemo.pages.CheckoutInfo$1 - **** Executing constructor for Checkout class ****
+31-12-2024 18:04:41 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****

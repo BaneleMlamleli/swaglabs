@@ -19,7 +19,7 @@ public class LoginTest extends BaseClass {
         new Login(driver).loginPage(correctUsername, correctPassword);
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void invalidLoginDetails() {
         for (int i = 0; i <= 6; i++) {
             switch (i) {
