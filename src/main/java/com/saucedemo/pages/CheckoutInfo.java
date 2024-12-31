@@ -39,6 +39,12 @@ public class CheckoutInfo {
     @FindBy(xpath = "//div[@class='inventory_list']//div[1]//div[3]//button[1]")
     WebElement btnBackpack;
 
+    @FindBy(xpath = "//body//div[@id='page_wrapper']//div[@id='inventory_container']//div[@id='inventory_container']//div[2]//div[3]//button[1]")
+    WebElement btnBikeLight;
+
+    @FindBy(xpath = "//div[3]//div[3]//button[1]")
+    WebElement btnBoltTShirt;
+
     @FindBy(xpath = "//a[@class='btn_action checkout_button']")
     WebElement btnCheckout;
 
@@ -70,6 +76,8 @@ public class CheckoutInfo {
 
     public void checkoutUserInfo(String name, String surname, String postalCode) {
         btnBackpack.click();
+        btnBikeLight.click();
+        btnBoltTShirt.click();
         btnCart.click();
         btnCheckout.click();
         waitsFactory.explicitWait(txtFirstname);

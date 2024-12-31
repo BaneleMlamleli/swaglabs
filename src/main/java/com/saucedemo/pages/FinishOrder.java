@@ -2,6 +2,7 @@ package com.saucedemo.pages;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -70,6 +71,7 @@ public class FinishOrder {
          */
         public void verifyOrderCompletion() {
                 logger.info("**** Executing verifyOrderCompletion method in the FinishOrder class ****");
+                driver.findElement(By.xpath("//a[@class='btn_action cart_button']")).click();
                 waitsFactory.explicitWait(imgPonyExpressSauceLabs);
                 String checkoutCompleteUrl = driver.getCurrentUrl();
                 Assert.assertTrue(txtFinish.getText().equalsIgnoreCase("Finish"),

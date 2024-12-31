@@ -23,7 +23,6 @@ public class FinishOrderTest extends BaseClass {
             "login" }, groups = "execute_verify_order_completion_method", priority = 1, dataProvider = "dtpCheckoutInfo", dataProviderClass = TestDataProvider.class)
     public void executeVerifyOrderCompletionMethod(String name, String lastname, String postalCode) {
         try {
-            System.out.println("executeVerifyOrderCompletionMethod");
             new CheckoutInfo(driver).checkoutUserInfo(name, lastname, postalCode);
             new FinishOrder(driver).verifyOrderCompletion();
         } catch (Exception e) {

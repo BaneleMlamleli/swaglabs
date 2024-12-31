@@ -1,5 +1,6 @@
 package com.saucedemo.pages;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
@@ -8,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.saucedemo.utilities.WaitsFactory;
 
@@ -22,7 +24,7 @@ public class CheckoutOverview {
     WebElement cartItemQuantity;
 
     @FindBy(xpath = "//div[@class='summary_quantity']")
-    List<WebElement> quantity;
+    List<WebElement> itemQuantity;
 
     @FindBy(xpath = "//div[@class='inventory_item_name']")
     List<WebElement> itemName;
@@ -33,7 +35,7 @@ public class CheckoutOverview {
     @FindBy(xpath = "//div[@class='inventory_item_price']")
     List<WebElement> itemPrice;
 
-    @FindBy(xpath = "(//div[normalize-space()='SauceCard #31337'])[1]")
+    @FindBy(xpath = "//div[normalize-space()='SauceCard #31337']")
     WebElement paymentInfo;
 
     @FindBy(xpath = "//div[normalize-space()='FREE PONY EXPRESS DELIVERY!']")
@@ -63,19 +65,39 @@ public class CheckoutOverview {
         logger.info("**** Executing constructor for CheckoutOverview class ****");
         this.driver = driver;
         waitsFactory = new WaitsFactory(driver);
-        PageFactory.initElements(driver, CheckoutOverview.class);
+        PageFactory.initElements(driver, this);
     }
 
     public void validateCheckoutInformation() {
         logger.info("**** Executing validateCheckoutInformation method in the CheckoutOverview class ****");
-        int cartQuantity = Integer.parseInt(cartItemQuantity.getText());
-        System.out.println("cartQuantity: " + cartQuantity);
-        String firstItemName = itemName.get(0).getText();
-        System.out.println("firstItemName: " + firstItemName);
-        String firstItemDescrioption = itemDesc.get(0).getText();
-        System.out.println("firstItemDescrioption: " + firstItemDescrioption);
-        String firstItemPrice = itemPrice.get(0).getText();
-        System.out.println("firstItemPrice: " + firstItemPrice);
+        DecimalFormat decimalFormat = new DecimalFormat("0.00");
+        waitsFactory.explicitWait(btnCancel);
+        int cartQty = 0;
+        double totalPrice = 0.0;
+
+        for (int i = 0; i < itemQuantity.size(); i++) {
+            cartQty += Integer.parseInt(itemQuantity.get(i).getText());
+            totalPrice += Double.parseDouble(itemPrice.get(i).getText().substring(1));
+            Assert.assertTrue(itemName.get(i).isDisplayed(), "Error! Item " + i + " name not displayed");
+            Assert.assertTrue(itemDesc.get(i).isDisplayed(), "Error! Item " + i + " description not displayed");
+        }
+
+        waitsFactory.explicitWait(totalAmount);
+        Assert.assertTrue(paymentInfo.getText().equalsIgnoreCase("SauceCard #31337"),
+                "Error! Payment information mismatch");
+        Assert.assertTrue(shippingInfo.getText().equalsIgnoreCase("FREE PONY EXPRESS DELIVERY!"),
+                "Error! Shipping information mismatch");
+        Assert.assertTrue((cartQty == Integer.parseInt(cartItemQuantity.getText())),
+                "Error! cart quantity and items quantity are not the same amount");
+        Assert.assertTrue((totalPrice == Double.parseDouble(itemTotalAmount.getText().substring(1))),
+                "Error! item price sum and items total prices are not the same amount");
+        String strTax = decimalFormat.format(Double.toString(totalPrice * 0.008004002));
+        Assert.assertEquals("$" + strTax.equalsIgnoreCase(taxAmount.getText()),
+                "Error! Calculated tax amount mismatch");
+        Double finalTotalPrice = (Double.parseDouble(strTax) + totalPrice);
+        Assert.assertTrue((finalTotalPrice == Double.parseDouble(decimalFormat.format(totalAmount.getText()))),
+                "Error! Calculated final Total price amount mismatch");
+
     }
 
 }
