@@ -1,34 +1,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="TestNG Suite" verbose="1" parallel="false">
-    <test name="TestNG Tests">
-        <!-- <groups>
-            <dependencies>
-                <group name="validate_all_products_info" depends-on="successful_login" />
-            </dependencies>
-        </groups> -->
+    <test name="swaglabs execution test pack">
         <classes>
-            <class name="com.saucedemo.tests.CartTest">
-                <!-- <methods>
-                    <include name="validateSpanIsDisplayed" />
-                    <include name="validateCartWithItems" />
-                </methods> -->
-            </class>
-            <class name="com.saucedemo.tests.CheckoutInfoTest">
-                <!-- <methods>
-                    <include name="validateSpanIsDisplayed" />
-                    <include name="validateCartWithItems" />
-                </methods> -->
-            </class>
-            <!-- <class name="com.saucedemo.tests.LoginTest">
-                <methods>
-                    <exclude name="invalidLoginDetails" />
-                </methods>
-            </class>
+            <class name="com.saucedemo.tests.LoginTest" />
+            <class name="com.saucedemo.tests.BurgerMenuTest">
             <class name="com.saucedemo.tests.ProductsTest">
-                <methods>
-                    <include name="validateAllProductInfo" />
-                </methods>
-            </class> -->
+            <class name="com.saucedemo.tests.SortProductsTest" />
+            <class name="com.saucedemo.tests.CartTest" />
+            <class name="com.saucedemo.tests.CheckoutInfoTest">
+            <class name="com.saucedemo.tests.CheckoutOverviewTest" />
+            <class name="com.saucedemo.tests.FinishOrderTest">
         </classes>
     </test>
 </suite>

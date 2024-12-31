@@ -1,20 +1,19 @@
-31-12-2024 18:02:38 [main] INFO  com.saucedemo.pages.CheckoutInfo$1 - **** Executing constructor for Checkout class ****
-31-12-2024 18:02:40 [main] INFO  com.saucedemo.pages.CheckoutInfo$1 - **** Executing constructor for Checkout class ****
-31-12-2024 18:02:50 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
-31-12-2024 18:04:35 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
-31-12-2024 18:04:35 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
-31-12-2024 18:04:35 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  Command line suite
-
-31-12-2024 18:04:35 [main] INFO  com.saucedemo.core.BaseClass$1 - **** initiating browser in the initBrowser method ****
-31-12-2024 18:04:35 [main] INFO  com.saucedemo.core.BaseClass$1 - Instance of driver in BaseClass: null
-31-12-2024 18:04:35 [main] INFO  com.saucedemo.core.BaseClass$1 - Browser: chrome
-31-12-2024 18:04:35 [main] INFO  com.saucedemo.core.BaseClass$1 - url: https://www.saucedemo.com/v1/index.html
-31-12-2024 18:04:38 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
-31-12-2024 18:04:38 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
-31-12-2024 18:04:38 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing constructor for Login class ****
-31-12-2024 18:04:38 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing loginPage method ****
-31-12-2024 18:04:38 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing assertLoginPage method ****
-31-12-2024 18:04:40 [main] INFO  com.saucedemo.pages.CheckoutInfo$1 - **** Executing constructor for Checkout class ****
-31-12-2024 18:04:41 [main] INFO  com.saucedemo.pages.CheckoutInfo$1 - **** Executing constructor for Checkout class ****
-31-12-2024 18:04:41 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
+31-12-2024 18:16:24 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing constructor for Products class ****
+31-12-2024 18:16:24 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing individualProductsInfo method in the Products class ****
+31-12-2024 18:16:25 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing constructor for Products class ****
+31-12-2024 18:16:25 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing individualProductsInfo method in the Products class ****
+31-12-2024 18:16:26 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing constructor for Products class ****
+31-12-2024 18:16:26 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing individualProductsInfo method in the Products class ****
+31-12-2024 18:16:26 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing constructor for Products class ****
+31-12-2024 18:16:26 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing individualProductsInfo method in the Products class ****
+31-12-2024 18:16:27 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing constructor for Products class ****
+31-12-2024 18:16:27 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing individualProductsInfo method in the Products class ****
+31-12-2024 18:16:28 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing constructor for Products class ****
+31-12-2024 18:16:28 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing validateRemoveButton method in the Products class ****
+31-12-2024 18:16:28 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing constructor for Products class ****
+31-12-2024 18:16:28 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing validateProductsImages method in the Products class ****
+31-12-2024 18:16:28 [main] INFO  com.saucedemo.pages.Products$1 - The 'Products' page has 6 valid images for each product
+31-12-2024 18:16:28 [main] ERROR com.saucedemo.pages.Products$1 - 'Cannot invoke "String.equals(Object)" because the return value of "org.openqa.selenium.WebElement.getDomAttribute(String)" is null' in method 'validateProductsImages'
+31-12-2024 18:16:28 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing constructor for Products class ****
+31-12-2024 18:16:28 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing socialMediaImages method in the Products class ****
+31-12-2024 18:16:29 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****

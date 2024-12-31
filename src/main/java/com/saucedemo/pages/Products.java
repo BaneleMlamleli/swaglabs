@@ -162,7 +162,7 @@ public class Products {
             for (WebElement img : productsImageList) {
                 if (img != null) {
                     if (img.getAttribute("naturalWidth").equals("0")) {
-                        logger.info(img.getAttribute("outerHTML") + " is broken in the method validateProductsImages.");
+                        logger.info(img.getDomAttribute("outerHTML") + " is broken in the method validateProductsImages.");
                         brokenImageCounter++;
                     }
                 }
