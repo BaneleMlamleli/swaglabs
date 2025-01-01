@@ -161,9 +161,9 @@ public class Products {
             logger.info("The 'Products' page has " + productsImageList.size() + " valid images for each product");
             for (WebElement img : productsImageList) {
                 if (img != null) {
-                    if (img.getDomAttribute("naturalWidth").equals("0")) {
+                    if (img.getAttribute("naturalWidth").equals("0")) {
                         logger.info(
-                                img.getDomAttribute("outerHTML") + " is broken in the method validateProductsImages.");
+                                img.getAttribute("outerHTML") + " is broken in the method validateProductsImages.");
                         brokenImageCounter++;
                     }
                 }

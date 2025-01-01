@@ -108,8 +108,6 @@ public class BurgerMenu {
 
     public String clickLogout() {
         openMenu.click();
-        waitsFactory.explicitWaitInvisibilityOfElement(logout);
-        waitsFactory.explicitWait(logout);
         logout.click();
         return driver.getCurrentUrl();
     }

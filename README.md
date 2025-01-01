@@ -34,6 +34,6 @@ I implemented the page object model design pattern, where all the tests are sepa
 
 There are three ways one can run this project
 
-- You can run it directly from the test class
-- Run from testng.xml
-- Run using maven command _mvn test_
+- You can run it directly at a test class level not individual methods, by clicking the play button
+- Run from testng.xml with the command **mvn test -DsuiteXmlFile=testng.xml**
+- Run using maven command **mvn test**

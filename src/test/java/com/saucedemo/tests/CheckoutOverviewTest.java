@@ -26,8 +26,8 @@ public class CheckoutOverviewTest extends BaseClass {
             new CheckoutInfo(driver).checkoutUserInfo(name, lastname, postalCode);
             new CheckoutOverview(driver).validateCheckoutInformation();
         } catch (Exception e) {
-            logger.warn("*** Exception error ***");
-            logger.warn(e.getMessage());
+            logger.error("**** Exception error ****");
+            logger.error(e.getMessage());
         }
     }
 }

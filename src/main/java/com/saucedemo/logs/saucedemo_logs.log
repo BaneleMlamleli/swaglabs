@@ -1,19 +1,3 @@
-31-12-2024 18:16:24 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing constructor for Products class ****
-31-12-2024 18:16:24 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing individualProductsInfo method in the Products class ****
-31-12-2024 18:16:25 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing constructor for Products class ****
-31-12-2024 18:16:25 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing individualProductsInfo method in the Products class ****
-31-12-2024 18:16:26 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing constructor for Products class ****
-31-12-2024 18:16:26 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing individualProductsInfo method in the Products class ****
-31-12-2024 18:16:26 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing constructor for Products class ****
-31-12-2024 18:16:26 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing individualProductsInfo method in the Products class ****
-31-12-2024 18:16:27 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing constructor for Products class ****
-31-12-2024 18:16:27 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing individualProductsInfo method in the Products class ****
-31-12-2024 18:16:28 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing constructor for Products class ****
-31-12-2024 18:16:28 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing validateRemoveButton method in the Products class ****
-31-12-2024 18:16:28 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing constructor for Products class ****
-31-12-2024 18:16:28 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing validateProductsImages method in the Products class ****
-31-12-2024 18:16:28 [main] INFO  com.saucedemo.pages.Products$1 - The 'Products' page has 6 valid images for each product
-31-12-2024 18:16:28 [main] ERROR com.saucedemo.pages.Products$1 - 'Cannot invoke "String.equals(Object)" because the return value of "org.openqa.selenium.WebElement.getDomAttribute(String)" is null' in method 'validateProductsImages'
-31-12-2024 18:16:28 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing constructor for Products class ****
-31-12-2024 18:16:28 [main] INFO  com.saucedemo.pages.Products$1 - **** Executing socialMediaImages method in the Products class ****
-31-12-2024 18:16:29 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
+01-01-2025 04:37:10 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing loginPage method ****
+01-01-2025 04:37:10 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing assertLoginPage method ****
+01-01-2025 04:37:10 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****

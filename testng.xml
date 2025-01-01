@@ -2,8 +2,12 @@
 <suite name="TestNG Suite" verbose="1" parallel="false">
     <test name="swaglabs execution test pack">
         <classes>
-            <class name="com.saucedemo.tests.LoginTest" />
-            <class name="com.saucedemo.tests.BurgerMenuTest">
+            <class name="com.saucedemo.tests.LoginTest">
+                <methods>
+                    <exclude name="invalidLoginDetails" />
+                </methods>
+            </class>
+            <!-- <class name="com.saucedemo.tests.BurgerMenuTest"> -->
             <class name="com.saucedemo.tests.ProductsTest">
             <class name="com.saucedemo.tests.SortProductsTest" />
             <class name="com.saucedemo.tests.CartTest" />

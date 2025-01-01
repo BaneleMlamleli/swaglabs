@@ -8,7 +8,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
 import com.saucedemo.utilities.ConfigReader;
@@ -23,7 +25,7 @@ public class BaseClass {
     public Logger logger = LogManager.getLogger(new Object() {
     }.getClass().getName());
 
-    @BeforeSuite
+    @BeforeClass
     public void initBrowser() {
         logger.info("**** initiating browser in the initBrowser method ****");
         logger.info("Instance of driver in BaseClass: " + driver);
@@ -65,7 +67,7 @@ public class BaseClass {
         }
     }
 
-    @AfterSuite
+    @AfterClass
     public void terminateBrowser() {
         logger.info("**** tear down of browser in the terminateBrowser method ****");
         if (driver != null) {
