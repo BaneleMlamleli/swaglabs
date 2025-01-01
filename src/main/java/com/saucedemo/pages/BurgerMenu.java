@@ -67,7 +67,7 @@ public class BurgerMenu {
     }.getClass().getName());
 
     public BurgerMenu(WebDriver driver) {
-        logger.info("**** executing constructor for BurgerMenu class ****");
+        logger.info("**** Executing constructor for BurgerMenu class ****");
         this.driver = driver;
         waitsFactory = new WaitsFactory(this.driver);
         PageFactory.initElements(driver, this);
@@ -108,8 +108,6 @@ public class BurgerMenu {
 
     public String clickLogout() {
         openMenu.click();
-        waitsFactory.explicitWaitInvisibilityOfElement(logout);
-        waitsFactory.explicitWait(logout);
         logout.click();
         return driver.getCurrentUrl();
     }

@@ -3,13 +3,22 @@ package com.saucedemo.tests;
 import org.testng.annotations.Test;
 
 import com.saucedemo.core.BaseClass;
+import com.saucedemo.pages.Login;
 import com.saucedemo.pages.Products;
+import com.saucedemo.utilities.ConfigReader;
 import com.saucedemo.utilities.TestDataProvider;
 
 public class ProductsTest extends BaseClass {
-    // dependsOnGroups = { "tests.LoginTest.successful_login" },
-    // groups = { "validate_all_products_info" },
-    @Test(dataProvider = "dtpProductsInfo", dataProviderClass = TestDataProvider.class, priority = 1)
+
+    @Test
+    public void login() {
+        String correctUsername = new ConfigReader().getProperty("standard_user");
+        String correctPassword = new ConfigReader().getProperty("password");
+        Login login = new Login(driver);
+        login.loginPage(correctUsername, correctPassword);
+    }
+
+    @Test(dependsOnMethods = { "login" }, dataProvider = "dtpProductsInfo", dataProviderClass = TestDataProvider.class, groups = "validate_all_products_info", priority = 1)
     public void validateAllProductInfo(String productName, String description, String price) {
         new Products(driver).allProductsInfo(productName, description, price);
     }

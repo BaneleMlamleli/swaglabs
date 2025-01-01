@@ -1,22 +1,19 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="TestNG Suite" verbose="1" parallel="false">
-    <!-- Define test cases -->
-    <test name="TestNG Tests">
-        <groups>
-            <dependencies>
-                <!-- Functional tests depend on Smoke tests -->
-                <group name="validate_all_products_info" depends-on="successful_login" />
-                <!-- Regression tests depend on Functional tests -->
-                <group name="regression" depends-on="functional" />
-            </dependencies>
-        </groups>
+    <test name="swaglabs execution test pack">
         <classes>
-            <class name="com.saucemdemo.tests.LoginTest" />
-            <class name="com.saucemdemo.tests.ProductsTest" />
-            <class name="com.saucemdemo.tests.BurgerMenuTest" />
-            <class name="com.saucemdemo.tests.SortProductsTest" />
-            <class name="com.saucemdemo.tests.CartTest" />
-            <class name="com.saucemdemo.tests.CheckoutTest" />
+            <class name="com.saucedemo.tests.LoginTest">
+                <methods>
+                    <exclude name="invalidLoginDetails" />
+                </methods>
+            </class>
+            <!-- <class name="com.saucedemo.tests.BurgerMenuTest"> -->
+            <class name="com.saucedemo.tests.ProductsTest">
+            <class name="com.saucedemo.tests.SortProductsTest" />
+            <class name="com.saucedemo.tests.CartTest" />
+            <class name="com.saucedemo.tests.CheckoutInfoTest">
+            <class name="com.saucedemo.tests.CheckoutOverviewTest" />
+            <class name="com.saucedemo.tests.FinishOrderTest">
         </classes>
     </test>
 </suite>

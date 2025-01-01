@@ -9,13 +9,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 
 import com.saucedemo.utilities.ConfigReader;
 
 public class BaseClass {
 
-    public WebDriver driver;
+    protected WebDriver driver;
 
     final String BROWSER = new ConfigReader().getProperty("browser");
     final String URL = new ConfigReader().getProperty("baseUrl");
@@ -31,22 +33,28 @@ public class BaseClass {
         logger.info("url: " + URL);
         switch (BROWSER) {
             case "chrome":
-                driver = new ChromeDriver();
-                driver.manage().window().maximize();
-                driver.get(URL);
-                driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+                if (driver == null) {
+                    driver = new ChromeDriver();
+                    driver.manage().window().maximize();
+                    driver.get(URL);
+                    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+                }
                 break;
             case "firefox":
-                driver = new FirefoxDriver();
-                driver.manage().window().maximize();
-                driver.get(URL);
-                driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+                if (driver == null) {
+                    driver = new FirefoxDriver();
+                    driver.manage().window().maximize();
+                    driver.get(URL);
+                    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+                }
                 break;
             case "edge":
-                driver = new EdgeDriver();
-                driver.manage().window().maximize();
-                driver.get(URL);
-                driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+                if (driver == null) {
+                    driver = new EdgeDriver();
+                    driver.manage().window().maximize();
+                    driver.get(URL);
+                    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+                }
                 break;
             default:
                 logger.error(
@@ -64,6 +72,7 @@ public class BaseClass {
         logger.info("**** tear down of browser in the terminateBrowser method ****");
         if (driver != null) {
             driver.quit();
+            driver = null;
         }
     }
 

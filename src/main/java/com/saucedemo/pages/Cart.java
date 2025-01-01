@@ -55,14 +55,14 @@ public class Cart {
     }.getClass().getName());
 
     public Cart(WebDriver driver) {
-        logger.info("**** executing constructor for Cart class ****");
-        this.driver = driver;
+        logger.info("**** Executing constructor for Cart class ****");
+        this.driver = driver;   
         waitsFactory = new WaitsFactory(driver);
         PageFactory.initElements(driver, this);
     }
 
     public void validateSpanItemIsDisplayed() {
-        logger.info("**** initiate validateSpanItemIsDisplayed method ****");
+        logger.info("**** Executing validateSpanItemIsDisplayed method ****");
         waitsFactory.explicitWaitButtonClickable(btnBackpack);
 
         btnBackpack.click();
@@ -71,7 +71,7 @@ public class Cart {
     }
 
     public void clickCartWithItems() {
-        logger.info("**** initiate clickCartWithItems method ****");
+        logger.info("**** Executing clickCartWithItems method ****");
         waitsFactory.explicitWait(cart);
         waitsFactory.explicitWaitButtonClickable(cart);
         Assert.assertTrue(cart.isDisplayed(), "Cart element not visible or actionable");
@@ -79,8 +79,7 @@ public class Cart {
         cart.click();
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/v1/cart.html");
 
-        // confirm number of items match the amount specified in shopping cart item
-        // counter
+        // confirm number of items match the amount specified in shopping cart item counter
         Assert.assertTrue(Integer.parseInt(shoppingCartItemCounter.getText()) == itemQuantity.size(),
                 "The amount of items does not match the amount specified in shopping cart item counter");
 

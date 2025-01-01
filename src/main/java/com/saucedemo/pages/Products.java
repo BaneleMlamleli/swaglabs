@@ -75,7 +75,7 @@ public class Products {
     }.getClass().getName());
 
     public Products(WebDriver driver) {
-        logger.info("**** executing constructor for Products class ****");
+        logger.info("**** Executing constructor for Products class ****");
         this.driver = driver;
         waitsFactory = new WaitsFactory(driver);
         PageFactory.initElements(driver, this);
@@ -162,7 +162,8 @@ public class Products {
             for (WebElement img : productsImageList) {
                 if (img != null) {
                     if (img.getAttribute("naturalWidth").equals("0")) {
-                        logger.info(img.getAttribute("outerHTML") + " is broken in the method validateProductsImages.");
+                        logger.info(
+                                img.getAttribute("outerHTML") + " is broken in the method validateProductsImages.");
                         brokenImageCounter++;
                     }
                 }

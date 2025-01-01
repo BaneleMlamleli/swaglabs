@@ -27,13 +27,13 @@ public class SortProducts {
         }.getClass().getName());
 
         public SortProducts(WebDriver driver) {
-                logger.info("**** executing constructor for SortProducts class ****");
+                logger.info("**** Executing constructor for SortProducts class ****");
                 this.driver = driver;
                 PageFactory.initElements(driver, this);
         }
 
         public List<WebElement> sortFromAtoZ() {
-                logger.info("**** executing sortFromAtoZ method for SortProducts class ****");
+                logger.info("**** Executing sortFromAtoZ method for SortProducts class ****");
                 Select sortByName = new Select(cmbSort);
                 cmbSort.click();
                 sortByName.selectByValue("az");
@@ -41,7 +41,7 @@ public class SortProducts {
         }
 
         public List<WebElement> sortFromZtoA() {
-                logger.info("**** executing sortFromZtoA method for SortProducts class ****");
+                logger.info("**** Executing sortFromZtoA method for SortProducts class ****");
                 Select sortByName = new Select(cmbSort);
                 cmbSort.click();
                 sortByName.selectByValue("za");
@@ -49,7 +49,7 @@ public class SortProducts {
         }
 
         public List<WebElement> sortFromLowToHigh() {
-                logger.info("**** executing sortFroLowToHigh method for SortProducts class ****");
+                logger.info("**** Executing sortFroLowToHigh method for SortProducts class ****");
                 Select sortByPrice = new Select(cmbSort);
                 cmbSort.click();
                 sortByPrice.selectByVisibleText("Price (low to high)");
@@ -57,7 +57,7 @@ public class SortProducts {
         }
 
         public List<WebElement> sortFromHighToLow() {
-                logger.info("**** executing sortFromHighToLow method for SortProducts class ****");
+                logger.info("**** Executing sortFromHighToLow method for SortProducts class ****");
                 Select sortByPrice = new Select(cmbSort);
                 cmbSort.click();
                 sortByPrice.selectByVisibleText("Price (high to low)");
