@@ -1,3 +1,29 @@
-01-01-2025 04:37:10 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing loginPage method ****
-01-01-2025 04:37:10 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing assertLoginPage method ****
-01-01-2025 04:37:10 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
+02-01-2025 17:37:53 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+02-01-2025 17:37:53 [main] INFO  com.saucedemo.core.BaseClass$1 - **** initiating browser in the initBrowser method ****
+02-01-2025 17:37:53 [main] INFO  com.saucedemo.core.BaseClass$1 - Instance of driver in BaseClass: null
+02-01-2025 17:37:53 [main] INFO  com.saucedemo.core.BaseClass$1 - Browser: chrome
+02-01-2025 17:37:53 [main] INFO  com.saucedemo.core.BaseClass$1 - url: https://www.saucedemo.com/v1/index.html
+02-01-2025 17:37:57 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
+02-01-2025 17:37:57 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
+02-01-2025 17:37:57 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing constructor for Login class ****
+02-01-2025 17:37:57 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing loginPage method ****
+02-01-2025 17:37:57 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing assertLoginPage method ****
+02-01-2025 17:38:07 [main] ERROR com.saucedemo.pages.Login$1 - 'no such element: Unable to locate element: {"method":"css selector","selector":"#user\-nameXxx"}
+  (Session info: chrome=131.0.6778.204)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-51-generic', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7af89880b33dcb42ebcc5db787784289, findElement {value=user-nameXxx, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.204, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43033}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43033/devtoo..., se:cdpVersion: 131.0.6778.204, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7af89880b33dcb42ebcc5db787784289' in method 'loginPage'
+02-01-2025 17:38:07 [main] INFO  com.saucedemo.utilities.ScreenshotUtil$1 - Successfully captured a screenshot
+02-01-2025 17:38:07 [main] INFO  com.saucedemo.pages.Cart$1 - **** Executing constructor for Cart class ****
+02-01-2025 17:38:07 [main] INFO  com.saucedemo.pages.Cart$1 - **** Executing validateSpanItemIsDisplayed method ****
+02-01-2025 17:38:28 [main] INFO  com.saucedemo.utilities.ScreenshotUtil$1 - Successfully captured a screenshot
+02-01-2025 17:38:28 [main] INFO  com.saucedemo.pages.Cart$1 - **** Executing constructor for Cart class ****
+02-01-2025 17:38:28 [main] INFO  com.saucedemo.pages.Cart$1 - **** Executing clickCartWithItems method ****
+02-01-2025 17:38:48 [main] INFO  com.saucedemo.utilities.ScreenshotUtil$1 - Successfully captured a screenshot
+02-01-2025 17:38:48 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****

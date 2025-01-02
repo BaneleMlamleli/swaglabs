@@ -10,7 +10,7 @@ public class TestDataProvider {
         @DataProvider(name = "dtpCheckoutInfo")
         public Object[][] checkoutUserDetails() {
                 return new Object[][] {
-                                { "Sam", "Mlamleli", "7100" }
+                                { "Sam", "Cutter", "1010" }
                 };
         }
 
