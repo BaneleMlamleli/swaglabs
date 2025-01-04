@@ -1,5 +1,6 @@
 package com.saucedemo.tests;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.saucedemo.core.BaseClass;
@@ -8,6 +9,7 @@ import com.saucedemo.pages.Products;
 import com.saucedemo.utilities.ConfigReader;
 import com.saucedemo.utilities.TestDataProvider;
 
+@Listeners(com.saucedemo.utilities.ExtentReportsUtil.class)
 public class ProductsTest extends BaseClass {
 
     @Test
@@ -18,7 +20,8 @@ public class ProductsTest extends BaseClass {
         login.loginPage(correctUsername, correctPassword);
     }
 
-    @Test(dependsOnMethods = { "login" }, dataProvider = "dtpProductsInfo", dataProviderClass = TestDataProvider.class, groups = "validate_all_products_info", priority = 1)
+    @Test(dependsOnMethods = {
+            "login" }, dataProvider = "dtpProductsInfo", dataProviderClass = TestDataProvider.class, groups = "validate_all_products_info", priority = 1)
     public void validateAllProductInfo(String productName, String description, String price) {
         new Products(driver).allProductsInfo(productName, description, price);
     }

@@ -11,10 +11,17 @@ import org.openqa.selenium.WebDriver;
 
 public class ScreenshotUtil {
 
+    WebDriver driver;
+
+    public ScreenshotUtil(WebDriver driver) {
+        this.driver = driver;
+    }
+
     public static Logger logger = LogManager.getLogger(new Object() {
     }.getClass().getName());
 
-    public static void screenShot(WebDriver driver, String failingMethod) {
+    public void screenShot(String failingMethod) {
+        logger.info("**** Executing screenShot method in the ScreenshotUtil class ****");
         try {
             // To create reference of TakesScreenshot
             TakesScreenshot screenshot = (TakesScreenshot) driver;
@@ -23,7 +30,8 @@ public class ScreenshotUtil {
             // Copy files to specific location
             // result.getName() will return name of test case so that screenshot name will
             // be same as test case name
-            FileUtils.copyFile(src, new File("../reports/screenshots/" + failingMethod + ".png"));
+            FileUtils.copyFile(src,
+                    new File(System.getProperty("user.dir") + "/reports/screenshot/" + failingMethod + ".png"));
             logger.info("Successfully captured a screenshot");
         } catch (Exception e) {
             logger.error("**** Exception while taking screenshot ****");

@@ -154,7 +154,6 @@ public class Products {
      * loaded.
      */
     public void validateProductsImages() {
-        logger.info("**** Executing validateProductsImages method in the Products class ****");
         Integer brokenImageCounter = 0;
         try {
             brokenImageCounter = 0;

@@ -1,5 +1,6 @@
 package com.saucedemo.tests;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.saucedemo.core.BaseClass;
@@ -7,6 +8,7 @@ import com.saucedemo.pages.Cart;
 import com.saucedemo.pages.Login;
 import com.saucedemo.utilities.ConfigReader;
 
+@Listeners(com.saucedemo.utilities.ExtentReportsUtil.class)
 public class CartTest extends BaseClass {
 
     @Test

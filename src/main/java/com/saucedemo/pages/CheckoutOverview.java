@@ -84,23 +84,33 @@ public class CheckoutOverview {
                 }
 
                 waitsFactory.explicitWait(totalAmount);
-                Assert.assertTrue(paymentInfo.getText().equalsIgnoreCase("SauceCard #31337"),"Error! Payment information mismatch");
-                Assert.assertTrue(shippingInfo.getText().equalsIgnoreCase("FREE PONY EXPRESS DELIVERY!"),"Error! Shipping information mismatch");
-                Assert.assertTrue((cartQty == Integer.parseInt(cartItemQuantity.getText())),"Error! cart quantity and items quantity are not the same amount");
+                Assert.assertTrue(paymentInfo.getText().equalsIgnoreCase("SauceCard #31337"),
+                                "Error! Payment information mismatch");
+                Assert.assertTrue(shippingInfo.getText().equalsIgnoreCase("FREE PONY EXPRESS DELIVERY!"),
+                                "Error! Shipping information mismatch");
+                Assert.assertTrue((cartQty == Integer.parseInt(cartItemQuantity.getText())),
+                                "Error! cart quantity and items quantity are not the same amount");
 
                 System.out.println("Combined prices: " + totalPrice);
                 System.out.println("get item total: " + itemTotalAmount.getText().substring(13));
-                Assert.assertTrue(totalPrice == Double.parseDouble(decimalFormat.format(itemTotalAmount.getText().substring(13))),"Error! item price sum and items total prices are not the same amount");
+                Assert.assertTrue(
+                                totalPrice == Double.parseDouble(
+                                                decimalFormat.format(itemTotalAmount.getText().substring(13))),
+                                "Error! item price sum and items total prices are not the same amount");
 
-                
-                Double tax = Double.parseDouble(decimalFormat.format(totalPrice * (Double.parseDouble(taxAmount.getText().substring(6)) / totalPrice)));
+                Double tax = Double.parseDouble(decimalFormat.format(
+                                totalPrice * (Double.parseDouble(taxAmount.getText().substring(6)) / totalPrice)));
                 System.out.println("tax: " + tax);
                 System.out.println("get tax amount: " + taxAmount.getText().substring(6));
-                Assert.assertEquals(tax == Double.parseDouble(decimalFormat.format(taxAmount.getText().substring(6))),"Error! Calculated tax amount mismatch");
-                
+                Assert.assertEquals(tax == Double.parseDouble(decimalFormat.format(taxAmount.getText().substring(6))),
+                                "Error! Calculated tax amount mismatch");
+
                 Double finalTotalPrice = tax + totalPrice;
                 System.out.println("Final Total Amount: " + finalTotalPrice);
                 System.out.println("get final Total Amount: " + totalAmount.getText().substring(8));
-                Assert.assertEquals((finalTotalPrice == Double.parseDouble(decimalFormat.format(totalAmount.getText().substring(8)))),"Error! Calculated final Total price amount mismatch");
+                Assert.assertEquals(
+                                (finalTotalPrice == Double
+                                                .parseDouble(decimalFormat.format(totalAmount.getText().substring(8)))),
+                                "Error! Calculated final Total price amount mismatch");
         }
 }

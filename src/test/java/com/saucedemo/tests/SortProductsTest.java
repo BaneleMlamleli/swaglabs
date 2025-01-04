@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.saucedemo.core.BaseClass;
@@ -11,6 +12,7 @@ import com.saucedemo.pages.Login;
 import com.saucedemo.pages.SortProducts;
 import com.saucedemo.utilities.ConfigReader;
 
+@Listeners(com.saucedemo.utilities.ExtentReportsUtil.class)
 public class SortProductsTest extends BaseClass {
 
         @Test(priority = 1)

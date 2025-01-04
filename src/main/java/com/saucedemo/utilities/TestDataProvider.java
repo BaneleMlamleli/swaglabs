@@ -1,6 +1,7 @@
 package com.saucedemo.utilities;
 
 import org.testng.annotations.*;
+import net.datafaker.Faker;
 
 /**
  * DataProvider
@@ -9,8 +10,9 @@ public class TestDataProvider {
 
         @DataProvider(name = "dtpCheckoutInfo")
         public Object[][] checkoutUserDetails() {
+                Faker faker = new Faker();
                 return new Object[][] {
-                                { "Sam", "Cutter", "1010" }
+                                { faker.name().firstName(), faker.name().lastName(), faker.address().zipCode() }
                 };
         }
 
