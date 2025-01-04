@@ -1,14 +1,10 @@
 package com.saucedemo.utilities;
 
-import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -40,7 +36,6 @@ public class ExtentReportsUtil extends BaseClass implements ITestListener {
 
         extentReports = new ExtentReports();
         extentReports.attachReporter(extentSparkReporter);
-        // REPORTS PATH: /home/banele/Documents/Programming/Java/swaglabs
         extentReports.setSystemInfo("computer name", System.getProperty("user.name"));
         extentReports.setSystemInfo("browser", new ConfigReader().getProperty("browser"));
         extentReports.setSystemInfo("os", System.getProperty("os.name"));
