@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Functional Testing</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 5, 2025 06:56:58 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jan 5, 2025 07:29:35 PM</span></a>
 </li>
 </ul>
 </div>
@@ -67,6 +67,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -74,25 +75,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="skip" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">invalidLoginDetails</p>
             <p class="text-sm">
-              <span>6:57:02 PM</span> / <span>00:00:00:002</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:29:40 PM</span> / <span>00:00:00:004</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">invalidLoginDetails</h5>
-<span class='badge badge-success'>01.05.2025 6:57:02 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:57:02 PM</span>
-<span class='badge badge-default'>00:00:00:002</span>
+<h5 class="test-status text-skip">invalidLoginDetails</h5>
+<span class='badge badge-success'>01.05.2025 7:29:40 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:29:40 PM</span>
+<span class='badge badge-default'>00:00:00:004</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -104,10 +105,21 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:57:02 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>7:29:40 PM</td>
         <td>
-          Test case PASSED: invalidLoginDetails
+          Test case SKIPPED: invalidLoginDetails
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:29:40 PM</td>
+        <td>
+          Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_131_LINUX)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-51-generic', java.version: '21.0.5'
+Driver info: driver.version: EdgeDriver
         </td>
       </tr>
   </tbody>
@@ -115,24 +127,24 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="skip" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">validLoginDetails</p>
             <p class="text-sm">
-              <span>6:57:02 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:29:40 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">validLoginDetails</h5>
-<span class='badge badge-success'>01.05.2025 6:57:02 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:57:02 PM</span>
+<h5 class="test-status text-skip">validLoginDetails</h5>
+<span class='badge badge-success'>01.05.2025 7:29:40 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:29:40 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -145,10 +157,21 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:57:02 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>7:29:40 PM</td>
         <td>
-          Test case PASSED: validLoginDetails
+          Test case SKIPPED: validLoginDetails
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:29:40 PM</td>
+        <td>
+          Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_131_LINUX)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-51-generic', java.version: '21.0.5'
+Driver info: driver.version: EdgeDriver
         </td>
       </tr>
   </tbody>
@@ -156,24 +179,24 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
+        <li class="test-item"  status="skip" test-id="3"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">login</p>
             <p class="text-sm">
-              <span>6:57:04 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:29:48 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">login</h5>
-<span class='badge badge-success'>01.05.2025 6:57:04 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:57:04 PM</span>
+<h5 class="test-status text-skip">login</h5>
+<span class='badge badge-success'>01.05.2025 7:29:48 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:29:48 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -186,10 +209,21 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:57:04 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>7:29:48 PM</td>
         <td>
-          Test case PASSED: login
+          Test case SKIPPED: login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:29:48 PM</td>
+        <td>
+          Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_131_LINUX)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-51-generic', java.version: '21.0.5'
+Driver info: driver.version: EdgeDriver
         </td>
       </tr>
   </tbody>
@@ -197,25 +231,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="4"
+        <li class="test-item"  status="skip" test-id="4"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">executeSortFromAtoZ</p>
             <p class="text-sm">
-              <span>6:57:05 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:29:48 PM</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">executeSortFromAtoZ</h5>
-<span class='badge badge-success'>01.05.2025 6:57:05 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:57:05 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<h5 class="test-status text-skip">executeSortFromAtoZ</h5>
+<span class='badge badge-success'>01.05.2025 7:29:48 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:29:48 PM</span>
+<span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -227,10 +261,21 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:57:05 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>7:29:48 PM</td>
         <td>
-          Test case PASSED: executeSortFromAtoZ
+          Test case SKIPPED: executeSortFromAtoZ
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:29:48 PM</td>
+        <td>
+          Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_131_LINUX)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-51-generic', java.version: '21.0.5'
+Driver info: driver.version: EdgeDriver
         </td>
       </tr>
   </tbody>
@@ -238,24 +283,24 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="5"
+        <li class="test-item"  status="skip" test-id="5"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">executeSortFromZtoA</p>
             <p class="text-sm">
-              <span>6:57:05 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:29:48 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">executeSortFromZtoA</h5>
-<span class='badge badge-success'>01.05.2025 6:57:05 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:57:05 PM</span>
+<h5 class="test-status text-skip">executeSortFromZtoA</h5>
+<span class='badge badge-success'>01.05.2025 7:29:48 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:29:48 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -268,10 +313,21 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:57:05 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>7:29:48 PM</td>
         <td>
-          Test case PASSED: executeSortFromZtoA
+          Test case SKIPPED: executeSortFromZtoA
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:29:48 PM</td>
+        <td>
+          Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_131_LINUX)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-51-generic', java.version: '21.0.5'
+Driver info: driver.version: EdgeDriver
         </td>
       </tr>
   </tbody>
@@ -279,24 +335,24 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="6"
+        <li class="test-item"  status="skip" test-id="6"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">executeSortFromLowToHigh</p>
             <p class="text-sm">
-              <span>6:57:05 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:29:48 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">executeSortFromLowToHigh</h5>
-<span class='badge badge-success'>01.05.2025 6:57:05 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:57:05 PM</span>
+<h5 class="test-status text-skip">executeSortFromLowToHigh</h5>
+<span class='badge badge-success'>01.05.2025 7:29:48 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:29:48 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -309,10 +365,21 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:57:05 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>7:29:48 PM</td>
         <td>
-          Test case PASSED: executeSortFromLowToHigh
+          Test case SKIPPED: executeSortFromLowToHigh
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:29:48 PM</td>
+        <td>
+          Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_131_LINUX)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-51-generic', java.version: '21.0.5'
+Driver info: driver.version: EdgeDriver
         </td>
       </tr>
   </tbody>
@@ -320,24 +387,24 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="7"
+        <li class="test-item"  status="skip" test-id="7"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">executeSortFromHighToLow</p>
             <p class="text-sm">
-              <span>6:57:05 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:29:48 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">executeSortFromHighToLow</h5>
-<span class='badge badge-success'>01.05.2025 6:57:05 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:57:05 PM</span>
+<h5 class="test-status text-skip">executeSortFromHighToLow</h5>
+<span class='badge badge-success'>01.05.2025 7:29:48 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:29:48 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -350,10 +417,21 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:57:05 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>7:29:48 PM</td>
         <td>
-          Test case PASSED: executeSortFromHighToLow
+          Test case SKIPPED: executeSortFromHighToLow
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:29:48 PM</td>
+        <td>
+          Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_131_LINUX)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-51-generic', java.version: '21.0.5'
+Driver info: driver.version: EdgeDriver
         </td>
       </tr>
   </tbody>
@@ -361,24 +439,24 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="8"
+        <li class="test-item"  status="skip" test-id="8"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">login</p>
             <p class="text-sm">
-              <span>6:57:08 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:29:59 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">login</h5>
-<span class='badge badge-success'>01.05.2025 6:57:08 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:57:08 PM</span>
+<h5 class="test-status text-skip">login</h5>
+<span class='badge badge-success'>01.05.2025 7:29:59 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:29:59 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -391,10 +469,21 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:57:08 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>7:29:59 PM</td>
         <td>
-          Test case PASSED: login
+          Test case SKIPPED: login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:29:59 PM</td>
+        <td>
+          Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_131_LINUX)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-51-generic', java.version: '21.0.5'
+Driver info: driver.version: EdgeDriver
         </td>
       </tr>
   </tbody>
@@ -402,24 +491,24 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="9"
+        <li class="test-item"  status="skip" test-id="9"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">validateClickOnAllItemsMenuOption</p>
             <p class="text-sm">
-              <span>6:57:08 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:29:59 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">validateClickOnAllItemsMenuOption</h5>
-<span class='badge badge-success'>01.05.2025 6:57:08 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:57:08 PM</span>
+<h5 class="test-status text-skip">validateClickOnAllItemsMenuOption</h5>
+<span class='badge badge-success'>01.05.2025 7:29:59 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:29:59 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -432,10 +521,18 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:57:08 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>7:29:59 PM</td>
         <td>
-          Test case PASSED: validateClickOnAllItemsMenuOption
+          Test case SKIPPED: validateClickOnAllItemsMenuOption
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:29:59 PM</td>
+        <td>
+          Method com.saucedemo.tests.BurgerMenuTest.validateClickOnAllItemsMenuOption() on instance com.saucedemo.tests.BurgerMenuTest@345f69f3 depends on not successfully finished methods 
+[com.saucedemo.tests.BurgerMenuTest.login() on instance com.saucedemo.tests.BurgerMenuTest@345f69f3]
         </td>
       </tr>
   </tbody>
@@ -443,24 +540,24 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="10"
+        <li class="test-item"  status="skip" test-id="10"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">validateClickOnAboutMenuOption</p>
             <p class="text-sm">
-              <span>6:57:14 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:29:59 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">validateClickOnAboutMenuOption</h5>
-<span class='badge badge-success'>01.05.2025 6:57:14 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:57:14 PM</span>
+<h5 class="test-status text-skip">validateClickOnAboutMenuOption</h5>
+<span class='badge badge-success'>01.05.2025 7:29:59 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:29:59 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -473,10 +570,18 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:57:14 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>7:29:59 PM</td>
         <td>
-          Test case PASSED: validateClickOnAboutMenuOption
+          Test case SKIPPED: validateClickOnAboutMenuOption
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:29:59 PM</td>
+        <td>
+          Method com.saucedemo.tests.BurgerMenuTest.validateClickOnAboutMenuOption() on instance com.saucedemo.tests.BurgerMenuTest@345f69f3 depends on not successfully finished methods 
+[com.saucedemo.tests.BurgerMenuTest.login() on instance com.saucedemo.tests.BurgerMenuTest@345f69f3]
         </td>
       </tr>
   </tbody>
@@ -484,24 +589,24 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="11"
+        <li class="test-item"  status="skip" test-id="11"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">validateClickOnResetAppStateMenuOption</p>
             <p class="text-sm">
-              <span>6:57:14 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:29:59 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">validateClickOnResetAppStateMenuOption</h5>
-<span class='badge badge-success'>01.05.2025 6:57:14 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:57:14 PM</span>
+<h5 class="test-status text-skip">validateClickOnResetAppStateMenuOption</h5>
+<span class='badge badge-success'>01.05.2025 7:29:59 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:29:59 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -514,10 +619,18 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:57:14 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>7:29:59 PM</td>
         <td>
-          Test case PASSED: validateClickOnResetAppStateMenuOption
+          Test case SKIPPED: validateClickOnResetAppStateMenuOption
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:29:59 PM</td>
+        <td>
+          Method com.saucedemo.tests.BurgerMenuTest.validateClickOnResetAppStateMenuOption() on instance com.saucedemo.tests.BurgerMenuTest@345f69f3 depends on not successfully finished methods 
+[com.saucedemo.tests.BurgerMenuTest.login() on instance com.saucedemo.tests.BurgerMenuTest@345f69f3]
         </td>
       </tr>
   </tbody>
@@ -525,25 +638,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="12"
+        <li class="test-item"  status="skip" test-id="12"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">validateClickOnLogoutMenuOption</p>
             <p class="text-sm">
-              <span>6:57:15 PM</span> / <span>00:00:00:001</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:29:59 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">validateClickOnLogoutMenuOption</h5>
-<span class='badge badge-success'>01.05.2025 6:57:15 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:57:15 PM</span>
-<span class='badge badge-default'>00:00:00:001</span>
+<h5 class="test-status text-skip">validateClickOnLogoutMenuOption</h5>
+<span class='badge badge-success'>01.05.2025 7:29:59 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:29:59 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -555,10 +668,18 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:57:15 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>7:29:59 PM</td>
         <td>
-          Test case PASSED: validateClickOnLogoutMenuOption
+          Test case SKIPPED: validateClickOnLogoutMenuOption
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:29:59 PM</td>
+        <td>
+          Method com.saucedemo.tests.BurgerMenuTest.validateClickOnLogoutMenuOption() on instance com.saucedemo.tests.BurgerMenuTest@345f69f3 depends on not successfully finished methods 
+[com.saucedemo.tests.BurgerMenuTest.login() on instance com.saucedemo.tests.BurgerMenuTest@345f69f3]
         </td>
       </tr>
   </tbody>
@@ -566,24 +687,24 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="13"
+        <li class="test-item"  status="skip" test-id="13"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">login</p>
             <p class="text-sm">
-              <span>6:57:32 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:30:07 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">login</h5>
-<span class='badge badge-success'>01.05.2025 6:57:32 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:57:32 PM</span>
+<h5 class="test-status text-skip">login</h5>
+<span class='badge badge-success'>01.05.2025 7:30:07 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:30:07 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -596,10 +717,21 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:57:32 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>7:30:07 PM</td>
         <td>
-          Test case PASSED: login
+          Test case SKIPPED: login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:30:07 PM</td>
+        <td>
+          Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_131_LINUX)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-51-generic', java.version: '21.0.5'
+Driver info: driver.version: EdgeDriver
         </td>
       </tr>
   </tbody>
@@ -607,24 +739,24 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="14"
+        <li class="test-item"  status="skip" test-id="14"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">executeVerifyOrderCompletionMethod</p>
             <p class="text-sm">
-              <span>6:57:57 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:30:07 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">executeVerifyOrderCompletionMethod</h5>
-<span class='badge badge-success'>01.05.2025 6:57:57 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:57:57 PM</span>
+<h5 class="test-status text-skip">executeVerifyOrderCompletionMethod</h5>
+<span class='badge badge-success'>01.05.2025 7:30:07 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:30:07 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -637,10 +769,18 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:57:57 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>7:30:07 PM</td>
         <td>
-          Test case PASSED: executeVerifyOrderCompletionMethod
+          Test case SKIPPED: executeVerifyOrderCompletionMethod
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:30:07 PM</td>
+        <td>
+          Method com.saucedemo.tests.FinishOrderTest.executeVerifyOrderCompletionMethod() on instance com.saucedemo.tests.FinishOrderTest@50de186c depends on not successfully finished methods 
+[com.saucedemo.tests.FinishOrderTest.login() on instance com.saucedemo.tests.FinishOrderTest@50de186c]
         </td>
       </tr>
   </tbody>
@@ -648,25 +788,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="15"
+        <li class="test-item"  status="skip" test-id="15"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">login</p>
             <p class="text-sm">
-              <span>6:58:01 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:30:13 PM</span> / <span>00:00:00:001</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">login</h5>
-<span class='badge badge-success'>01.05.2025 6:58:01 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:01 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<h5 class="test-status text-skip">login</h5>
+<span class='badge badge-success'>01.05.2025 7:30:13 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:30:13 PM</span>
+<span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -678,10 +818,21 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:01 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>7:30:13 PM</td>
         <td>
-          Test case PASSED: login
+          Test case SKIPPED: login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:30:13 PM</td>
+        <td>
+          Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_131_LINUX)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-51-generic', java.version: '21.0.5'
+Driver info: driver.version: EdgeDriver
         </td>
       </tr>
   </tbody>
@@ -689,24 +840,24 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="16"
+        <li class="test-item"  status="skip" test-id="16"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">validateSpanIsDisplayed</p>
             <p class="text-sm">
-              <span>6:58:01 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:30:13 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">validateSpanIsDisplayed</h5>
-<span class='badge badge-success'>01.05.2025 6:58:01 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:01 PM</span>
+<h5 class="test-status text-skip">validateSpanIsDisplayed</h5>
+<span class='badge badge-success'>01.05.2025 7:30:13 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:30:13 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -719,10 +870,18 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:01 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>7:30:13 PM</td>
         <td>
-          Test case PASSED: validateSpanIsDisplayed
+          Test case SKIPPED: validateSpanIsDisplayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:30:13 PM</td>
+        <td>
+          Method com.saucedemo.tests.CartTest.validateSpanIsDisplayed() on instance com.saucedemo.tests.CartTest@3f57bcad depends on not successfully finished methods 
+[com.saucedemo.tests.CartTest.login() on instance com.saucedemo.tests.CartTest@3f57bcad]
         </td>
       </tr>
   </tbody>
@@ -730,24 +889,24 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="17"
+        <li class="test-item"  status="skip" test-id="17"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">validateCartWithItems</p>
             <p class="text-sm">
-              <span>6:58:01 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:30:13 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">validateCartWithItems</h5>
-<span class='badge badge-success'>01.05.2025 6:58:01 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:01 PM</span>
+<h5 class="test-status text-skip">validateCartWithItems</h5>
+<span class='badge badge-success'>01.05.2025 7:30:13 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:30:13 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -760,10 +919,18 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:01 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>7:30:13 PM</td>
         <td>
-          Test case PASSED: validateCartWithItems
+          Test case SKIPPED: validateCartWithItems
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:30:13 PM</td>
+        <td>
+          Method com.saucedemo.tests.CartTest.validateCartWithItems() on instance com.saucedemo.tests.CartTest@3f57bcad depends on not successfully finished methods 
+[com.saucedemo.tests.CartTest.validateSpanIsDisplayed() on instance com.saucedemo.tests.CartTest@3f57bcad]
         </td>
       </tr>
   </tbody>
@@ -771,24 +938,24 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="18"
+        <li class="test-item"  status="skip" test-id="18"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">login</p>
             <p class="text-sm">
-              <span>6:58:10 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:30:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">login</h5>
-<span class='badge badge-success'>01.05.2025 6:58:10 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:10 PM</span>
+<h5 class="test-status text-skip">login</h5>
+<span class='badge badge-success'>01.05.2025 7:30:21 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:30:21 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -801,10 +968,21 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:10 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>7:30:21 PM</td>
         <td>
-          Test case PASSED: login
+          Test case SKIPPED: login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:30:21 PM</td>
+        <td>
+          Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_131_LINUX)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-51-generic', java.version: '21.0.5'
+Driver info: driver.version: EdgeDriver
         </td>
       </tr>
   </tbody>
@@ -812,24 +990,24 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="19"
+        <li class="test-item"  status="skip" test-id="19"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">validateCheckoutUserInfo</p>
             <p class="text-sm">
-              <span>6:58:13 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:30:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">validateCheckoutUserInfo</h5>
-<span class='badge badge-success'>01.05.2025 6:58:13 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:13 PM</span>
+<h5 class="test-status text-skip">validateCheckoutUserInfo</h5>
+<span class='badge badge-success'>01.05.2025 7:30:21 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:30:21 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -842,10 +1020,18 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:13 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>7:30:21 PM</td>
         <td>
-          Test case PASSED: validateCheckoutUserInfo
+          Test case SKIPPED: validateCheckoutUserInfo
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:30:21 PM</td>
+        <td>
+          Method com.saucedemo.tests.CheckoutInfoTest.validateCheckoutUserInfo() on instance com.saucedemo.tests.CheckoutInfoTest@1e8b7643 depends on not successfully finished methods 
+[com.saucedemo.tests.CheckoutInfoTest.login() on instance com.saucedemo.tests.CheckoutInfoTest@1e8b7643]
         </td>
       </tr>
   </tbody>
@@ -853,25 +1039,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="20"
+        <li class="test-item"  status="skip" test-id="20"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">verifyCancelCheckoutUserInfo</p>
             <p class="text-sm">
-              <span>6:58:13 PM</span> / <span>00:00:00:001</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:30:21 PM</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyCancelCheckoutUserInfo</h5>
-<span class='badge badge-success'>01.05.2025 6:58:13 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:13 PM</span>
-<span class='badge badge-default'>00:00:00:001</span>
+<h5 class="test-status text-skip">verifyCancelCheckoutUserInfo</h5>
+<span class='badge badge-success'>01.05.2025 7:30:21 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:30:21 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -883,10 +1069,21 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:13 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>7:30:21 PM</td>
         <td>
-          Test case PASSED: verifyCancelCheckoutUserInfo
+          Test case SKIPPED: verifyCancelCheckoutUserInfo
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:30:21 PM</td>
+        <td>
+          Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_131_LINUX)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-51-generic', java.version: '21.0.5'
+Driver info: driver.version: EdgeDriver
         </td>
       </tr>
   </tbody>
@@ -901,7 +1098,7 @@
           <div class="test-detail">
             <p class="name">login</p>
             <p class="text-sm">
-              <span>6:58:28 PM</span> / <span>00:00:00:000</span>
+              <span>7:31:16 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -910,8 +1107,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">login</h5>
-<span class='badge badge-success'>01.05.2025 6:58:28 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:28 PM</span>
+<span class='badge badge-success'>01.05.2025 7:31:16 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:31:16 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -925,7 +1122,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:28 PM</td>
+        <td>7:31:16 PM</td>
         <td>
           Test case PASSED: login
         </td>
@@ -942,7 +1139,7 @@
           <div class="test-detail">
             <p class="name">validateAllProductInfo</p>
             <p class="text-sm">
-              <span>6:58:28 PM</span> / <span>00:00:00:000</span>
+              <span>7:31:16 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -951,8 +1148,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">validateAllProductInfo</h5>
-<span class='badge badge-success'>01.05.2025 6:58:28 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:28 PM</span>
+<span class='badge badge-success'>01.05.2025 7:31:16 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:31:16 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -966,7 +1163,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:28 PM</td>
+        <td>7:31:16 PM</td>
         <td>
           Test case PASSED: validateAllProductInfo
         </td>
@@ -983,7 +1180,7 @@
           <div class="test-detail">
             <p class="name">validateAllProductInfo</p>
             <p class="text-sm">
-              <span>6:58:28 PM</span> / <span>00:00:00:000</span>
+              <span>7:31:16 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -992,8 +1189,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">validateAllProductInfo</h5>
-<span class='badge badge-success'>01.05.2025 6:58:28 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:28 PM</span>
+<span class='badge badge-success'>01.05.2025 7:31:16 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:31:16 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -1007,7 +1204,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:28 PM</td>
+        <td>7:31:16 PM</td>
         <td>
           Test case PASSED: validateAllProductInfo
         </td>
@@ -1024,7 +1221,7 @@
           <div class="test-detail">
             <p class="name">validateAllProductInfo</p>
             <p class="text-sm">
-              <span>6:58:28 PM</span> / <span>00:00:00:000</span>
+              <span>7:31:16 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1033,8 +1230,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">validateAllProductInfo</h5>
-<span class='badge badge-success'>01.05.2025 6:58:28 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:28 PM</span>
+<span class='badge badge-success'>01.05.2025 7:31:16 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:31:16 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -1048,7 +1245,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:28 PM</td>
+        <td>7:31:16 PM</td>
         <td>
           Test case PASSED: validateAllProductInfo
         </td>
@@ -1065,7 +1262,7 @@
           <div class="test-detail">
             <p class="name">validateAllProductInfo</p>
             <p class="text-sm">
-              <span>6:58:28 PM</span> / <span>00:00:00:000</span>
+              <span>7:31:16 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1074,8 +1271,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">validateAllProductInfo</h5>
-<span class='badge badge-success'>01.05.2025 6:58:28 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:28 PM</span>
+<span class='badge badge-success'>01.05.2025 7:31:16 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:31:16 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -1089,7 +1286,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:28 PM</td>
+        <td>7:31:16 PM</td>
         <td>
           Test case PASSED: validateAllProductInfo
         </td>
@@ -1106,7 +1303,7 @@
           <div class="test-detail">
             <p class="name">validateAllProductInfo</p>
             <p class="text-sm">
-              <span>6:58:28 PM</span> / <span>00:00:00:000</span>
+              <span>7:31:16 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1115,8 +1312,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">validateAllProductInfo</h5>
-<span class='badge badge-success'>01.05.2025 6:58:28 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:28 PM</span>
+<span class='badge badge-success'>01.05.2025 7:31:16 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:31:16 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -1130,7 +1327,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:28 PM</td>
+        <td>7:31:16 PM</td>
         <td>
           Test case PASSED: validateAllProductInfo
         </td>
@@ -1147,7 +1344,7 @@
           <div class="test-detail">
             <p class="name">validateAllProductInfo</p>
             <p class="text-sm">
-              <span>6:58:28 PM</span> / <span>00:00:00:000</span>
+              <span>7:31:16 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1156,8 +1353,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">validateAllProductInfo</h5>
-<span class='badge badge-success'>01.05.2025 6:58:28 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:28 PM</span>
+<span class='badge badge-success'>01.05.2025 7:31:16 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:31:16 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -1171,7 +1368,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:28 PM</td>
+        <td>7:31:16 PM</td>
         <td>
           Test case PASSED: validateAllProductInfo
         </td>
@@ -1188,7 +1385,7 @@
           <div class="test-detail">
             <p class="name">validateIndividualProductsLocator</p>
             <p class="text-sm">
-              <span>6:58:30 PM</span> / <span>00:00:00:000</span>
+              <span>7:31:21 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1197,8 +1394,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">validateIndividualProductsLocator</h5>
-<span class='badge badge-success'>01.05.2025 6:58:30 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:30 PM</span>
+<span class='badge badge-success'>01.05.2025 7:31:21 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:31:21 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -1212,7 +1409,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:30 PM</td>
+        <td>7:31:21 PM</td>
         <td>
           Test case PASSED: validateIndividualProductsLocator
         </td>
@@ -1229,7 +1426,7 @@
           <div class="test-detail">
             <p class="name">validateIndividualProductsLocator</p>
             <p class="text-sm">
-              <span>6:58:31 PM</span> / <span>00:00:00:000</span>
+              <span>7:31:23 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1238,8 +1435,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">validateIndividualProductsLocator</h5>
-<span class='badge badge-success'>01.05.2025 6:58:31 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:31 PM</span>
+<span class='badge badge-success'>01.05.2025 7:31:23 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:31:23 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -1253,7 +1450,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:31 PM</td>
+        <td>7:31:23 PM</td>
         <td>
           Test case PASSED: validateIndividualProductsLocator
         </td>
@@ -1270,7 +1467,7 @@
           <div class="test-detail">
             <p class="name">validateIndividualProductsLocator</p>
             <p class="text-sm">
-              <span>6:58:34 PM</span> / <span>00:00:00:000</span>
+              <span>7:31:25 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1279,8 +1476,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">validateIndividualProductsLocator</h5>
-<span class='badge badge-success'>01.05.2025 6:58:34 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:34 PM</span>
+<span class='badge badge-success'>01.05.2025 7:31:25 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:31:25 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -1294,7 +1491,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:34 PM</td>
+        <td>7:31:25 PM</td>
         <td>
           Test case PASSED: validateIndividualProductsLocator
         </td>
@@ -1311,7 +1508,7 @@
           <div class="test-detail">
             <p class="name">validateIndividualProductsLocator</p>
             <p class="text-sm">
-              <span>6:58:36 PM</span> / <span>00:00:00:000</span>
+              <span>7:31:25 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1320,8 +1517,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">validateIndividualProductsLocator</h5>
-<span class='badge badge-success'>01.05.2025 6:58:36 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:36 PM</span>
+<span class='badge badge-success'>01.05.2025 7:31:25 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:31:25 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -1335,7 +1532,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:36 PM</td>
+        <td>7:31:25 PM</td>
         <td>
           Test case PASSED: validateIndividualProductsLocator
         </td>
@@ -1352,7 +1549,7 @@
           <div class="test-detail">
             <p class="name">validateIndividualProductsLocator</p>
             <p class="text-sm">
-              <span>6:58:36 PM</span> / <span>00:00:00:000</span>
+              <span>7:31:25 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1361,8 +1558,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">validateIndividualProductsLocator</h5>
-<span class='badge badge-success'>01.05.2025 6:58:36 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:36 PM</span>
+<span class='badge badge-success'>01.05.2025 7:31:25 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:31:25 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -1376,7 +1573,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:36 PM</td>
+        <td>7:31:25 PM</td>
         <td>
           Test case PASSED: validateIndividualProductsLocator
         </td>
@@ -1393,7 +1590,7 @@
           <div class="test-detail">
             <p class="name">validateIndividualProductsLocator</p>
             <p class="text-sm">
-              <span>6:58:36 PM</span> / <span>00:00:00:000</span>
+              <span>7:31:27 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1402,8 +1599,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">validateIndividualProductsLocator</h5>
-<span class='badge badge-success'>01.05.2025 6:58:36 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:36 PM</span>
+<span class='badge badge-success'>01.05.2025 7:31:27 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:31:27 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -1417,7 +1614,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:36 PM</td>
+        <td>7:31:27 PM</td>
         <td>
           Test case PASSED: validateIndividualProductsLocator
         </td>
@@ -1434,7 +1631,7 @@
           <div class="test-detail">
             <p class="name">validateButtonTextChange</p>
             <p class="text-sm">
-              <span>6:58:37 PM</span> / <span>00:00:00:000</span>
+              <span>7:31:28 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1443,8 +1640,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">validateButtonTextChange</h5>
-<span class='badge badge-success'>01.05.2025 6:58:37 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:37 PM</span>
+<span class='badge badge-success'>01.05.2025 7:31:28 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:31:28 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -1458,7 +1655,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:37 PM</td>
+        <td>7:31:28 PM</td>
         <td>
           Test case PASSED: validateButtonTextChange
         </td>
@@ -1475,7 +1672,7 @@
           <div class="test-detail">
             <p class="name">productsImages</p>
             <p class="text-sm">
-              <span>6:58:37 PM</span> / <span>00:00:00:000</span>
+              <span>7:31:28 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1484,8 +1681,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">productsImages</h5>
-<span class='badge badge-success'>01.05.2025 6:58:37 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:37 PM</span>
+<span class='badge badge-success'>01.05.2025 7:31:28 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:31:28 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -1499,7 +1696,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:37 PM</td>
+        <td>7:31:28 PM</td>
         <td>
           Test case PASSED: productsImages
         </td>
@@ -1516,7 +1713,7 @@
           <div class="test-detail">
             <p class="name">verifySocialMediaImages</p>
             <p class="text-sm">
-              <span>6:58:37 PM</span> / <span>00:00:00:000</span>
+              <span>7:31:28 PM</span> / <span>00:00:00:001</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1525,9 +1722,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">verifySocialMediaImages</h5>
-<span class='badge badge-success'>01.05.2025 6:58:37 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:37 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<span class='badge badge-success'>01.05.2025 7:31:28 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:31:28 PM</span>
+<span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=36</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1540,7 +1737,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:37 PM</td>
+        <td>7:31:28 PM</td>
         <td>
           Test case PASSED: verifySocialMediaImages
         </td>
@@ -1557,7 +1754,7 @@
           <div class="test-detail">
             <p class="name">login</p>
             <p class="text-sm">
-              <span>6:58:46 PM</span> / <span>00:00:00:000</span>
+              <span>7:31:41 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1566,8 +1763,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">login</h5>
-<span class='badge badge-success'>01.05.2025 6:58:46 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:46 PM</span>
+<span class='badge badge-success'>01.05.2025 7:31:41 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:31:41 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=37</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -1581,7 +1778,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:46 PM</td>
+        <td>7:31:41 PM</td>
         <td>
           Test case PASSED: login
         </td>
@@ -1598,7 +1795,7 @@
           <div class="test-detail">
             <p class="name">executeValidateCheckoutInformationMethod</p>
             <p class="text-sm">
-              <span>6:58:47 PM</span> / <span>00:00:00:000</span>
+              <span>7:31:43 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1607,8 +1804,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">executeValidateCheckoutInformationMethod</h5>
-<span class='badge badge-success'>01.05.2025 6:58:47 PM</span>
-<span class='badge badge-danger'>01.05.2025 6:58:47 PM</span>
+<span class='badge badge-success'>01.05.2025 7:31:43 PM</span>
+<span class='badge badge-danger'>01.05.2025 7:31:43 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=38</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -1622,7 +1819,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:58:47 PM</td>
+        <td>7:31:43 PM</td>
         <td>
           Test case PASSED: executeValidateCheckoutInformationMethod
         </td>
@@ -1646,19 +1843,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 5, 2025 06:56:58 PM</h3>
+<h3>Jan 5, 2025 07:29:35 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 5, 2025 06:58:47 PM</h3>
+<h3>Jan 5, 2025 07:31:44 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>38</h3>
+<h3>18</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -1680,13 +1877,13 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>38</b> tests passed
+<div><small data-tooltip='47%'>
+<b>18</b> tests passed
 </small>
 </div>
 <div>
 <small data-tooltip='0%'><b>0</b> tests failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+<b>20</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -1703,10 +1900,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>38</b> events passed</small></div>
+<div><small data-tooltip='31%'><b>18</b> events passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>0</b> others
+<b data-tooltip='%'>40</b> others
 </small>
 </div>
 </div>
@@ -1722,7 +1919,7 @@
 </div></div>
 <script>
 var timeline = {
-"invalidLoginDetails":0.002,"validLoginDetails":0,"login":0,"executeSortFromAtoZ":0,"executeSortFromZtoA":0,"executeSortFromLowToHigh":0,"executeSortFromHighToLow":0,"login":0,"validateClickOnAllItemsMenuOption":0,"validateClickOnAboutMenuOption":0,"validateClickOnResetAppStateMenuOption":0,"validateClickOnLogoutMenuOption":0.001,"login":0,"executeVerifyOrderCompletionMethod":0,"login":0,"validateSpanIsDisplayed":0,"validateCartWithItems":0,"login":0,"validateCheckoutUserInfo":0,"verifyCancelCheckoutUserInfo":0.001,"login":0,"validateAllProductInfo":0,"validateAllProductInfo":0,"validateAllProductInfo":0,"validateAllProductInfo":0,"validateAllProductInfo":0,"validateAllProductInfo":0,"validateIndividualProductsLocator":0,"validateIndividualProductsLocator":0,"validateIndividualProductsLocator":0,"validateIndividualProductsLocator":0,"validateIndividualProductsLocator":0,"validateIndividualProductsLocator":0,"validateButtonTextChange":0,"productsImages":0,"verifySocialMediaImages":0,"login":0,"executeValidateCheckoutInformationMethod":0
+"invalidLoginDetails":0.004,"validLoginDetails":0,"login":0,"executeSortFromAtoZ":0.001,"executeSortFromZtoA":0,"executeSortFromLowToHigh":0,"executeSortFromHighToLow":0,"login":0,"validateClickOnAllItemsMenuOption":0,"validateClickOnAboutMenuOption":0,"validateClickOnResetAppStateMenuOption":0,"validateClickOnLogoutMenuOption":0,"login":0,"executeVerifyOrderCompletionMethod":0,"login":0.001,"validateSpanIsDisplayed":0,"validateCartWithItems":0,"login":0,"validateCheckoutUserInfo":0,"verifyCancelCheckoutUserInfo":0,"login":0,"validateAllProductInfo":0,"validateAllProductInfo":0,"validateAllProductInfo":0,"validateAllProductInfo":0,"validateAllProductInfo":0,"validateAllProductInfo":0,"validateIndividualProductsLocator":0,"validateIndividualProductsLocator":0,"validateIndividualProductsLocator":0,"validateIndividualProductsLocator":0,"validateIndividualProductsLocator":0,"validateIndividualProductsLocator":0,"validateButtonTextChange":0,"productsImages":0,"verifySocialMediaImages":0.001,"login":0,"executeValidateCheckoutInformationMethod":0
 };
 </script>
 <div class="row">
@@ -1738,7 +1935,7 @@ var timeline = {
 </tr>
 <tr>
 <td>browser</td>
-<td>chrome</td>
+<td>edge</td>
 </tr>
 <tr>
 <td>os</td>
@@ -1757,10 +1954,10 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 38,
+passParent: 18,
 failParent: 0,
 warningParent: 0,
-skipParent: 0,
+skipParent: 20,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -1774,11 +1971,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 38,
+passEvents: 18,
 failEvents: 0,
 warningEvents: 0,
-skipEvents: 0,
-infoEvents: 0
+skipEvents: 20,
+infoEvents: 20
 };
 </script>        </div>
       </div>
