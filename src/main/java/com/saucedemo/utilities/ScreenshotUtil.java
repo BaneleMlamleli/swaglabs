@@ -1,6 +1,9 @@
 package com.saucedemo.utilities;
 
 import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
@@ -20,19 +23,18 @@ public class ScreenshotUtil {
     public static Logger logger = LogManager.getLogger(new Object() {
     }.getClass().getName());
 
-    public void screenShot(String failingMethod) {
+    public void screenShot(String failedImageFile) {
         logger.info("**** Executing screenShot method in the ScreenshotUtil class ****");
         try {
-            // To create reference of TakesScreenshot
             TakesScreenshot screenshot = (TakesScreenshot) driver;
-            // Call method to capture screenshot
             File src = screenshot.getScreenshotAs(OutputType.FILE);
-            // Copy files to specific location
-            // result.getName() will return name of test case so that screenshot name will
-            // be same as test case name
             FileUtils.copyFile(src,
-                    new File(System.getProperty("user.dir") + "/reports/screenshot/" + failingMethod + ".png"));
+                    new File(System.getProperty("user.dir") + "/reports/screenshot/" + failedImageFile + ".png"));
             logger.info("Successfully captured a screenshot");
+        } catch (IOException ioe) {
+            logger.error("**** IOException while taking screenshot ****");
+            logger.error(ioe.getMessage());
+            ioe.printStackTrace();
         } catch (Exception e) {
             logger.error("**** Exception while taking screenshot ****");
             logger.error(e.getMessage());

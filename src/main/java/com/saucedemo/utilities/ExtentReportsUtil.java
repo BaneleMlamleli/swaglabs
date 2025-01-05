@@ -1,5 +1,6 @@
 package com.saucedemo.utilities;
 
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -52,21 +53,26 @@ public class ExtentReportsUtil extends BaseClass implements ITestListener {
 
     public void onTestFailure(ITestResult result) {
         logger.info("**** Executing onTestFailure method in the ExtentReportsUtil class ****");
-        new ScreenshotUtil(driver).screenShot(result.getName());
-        extentTest = extentReports.createTest(result.getName())
-                .addScreenCaptureFromPath(
-                        System.getProperty("user.dir") + "/reports/screenshot/" + result.getName() + ".png")
-                .fail(MediaEntityBuilder
-                        .createScreenCaptureFromPath(
-                                (System.getProperty("user.dir") + "/reports/screenshot/" + result.getName() + ".png"))
-                        .build());
-        extentTest.log(Status.FAIL, "Test case FAILED: " + result.getName());
-        extentTest.log(Status.FAIL, "Test case FAILED CAUSE: " + result.getThrowable());
+        String timestamp = new SimpleDateFormat("dd-MM-yyyy_HH.mm.ss").format(new Date());
+        String failedImageFile = result.getName() + "_" + timestamp;
+        extentTest = extentReports.createTest(failedImageFile);
+        new ScreenshotUtil(driver).screenShot(failedImageFile);
+        extentTest.addScreenCaptureFromPath(
+                System.getProperty("user.dir") + "/reports/screenshot/" + failedImageFile +
+                        ".png");
+        extentTest.fail(MediaEntityBuilder
+                .createScreenCaptureFromPath(
+                        System.getProperty("user.dir") + "/reports/screenshot/" + failedImageFile +
+                                ".png")
+                .build());
+        extentTest.log(Status.FAIL, "Test case FAILED: " + failedImageFile);
+        extentTest.log(Status.INFO, result.getThrowable().getMessage());
     }
 
     public void onTestSkipped(ITestResult result) {
         extentTest = extentReports.createTest(result.getName()); // create a new entry in the report
         extentTest.log(Status.SKIP, "Test case SKIPPED: " + result.getName());
+        extentTest.log(Status.INFO, result.getThrowable().getMessage());
     }
 
     public void onFinish(ITestContext context) {

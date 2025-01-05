@@ -1,27 +1,8 @@
-04-01-2025 18:49:19 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
-04-01-2025 18:49:19 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
-04-01-2025 18:49:19 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
-04-01-2025 18:49:19 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
-04-01-2025 18:49:19 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  Command line suite
-
-04-01-2025 18:49:19 [main] INFO  com.saucedemo.utilities.ExtentReportsUtil$1 - **** Executing onStart method in the ExtentReportsUtil class ****
-04-01-2025 18:49:19 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
-04-01-2025 18:49:19 [main] INFO  com.saucedemo.core.BaseClass$1 - **** initiating browser in the initBrowser method ****
-04-01-2025 18:49:19 [main] INFO  com.saucedemo.core.BaseClass$1 - Instance of driver in BaseClass: null
-04-01-2025 18:49:19 [main] INFO  com.saucedemo.core.BaseClass$1 - Browser: chrome
-04-01-2025 18:49:19 [main] INFO  com.saucedemo.core.BaseClass$1 - url: https://www.saucedemo.com/v1/index.html
-04-01-2025 18:49:24 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
-04-01-2025 18:49:24 [main] INFO  com.saucedemo.utilities.ConfigReader$1 - **** Executing getProperty method in ConfigReader class ****
-04-01-2025 18:49:24 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing constructor for Login class ****
-04-01-2025 18:49:24 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing loginPage method ****
-04-01-2025 18:49:24 [main] INFO  com.saucedemo.pages.Login$1 - **** Executing assertLoginPage method ****
-04-01-2025 18:49:26 [main] INFO  com.saucedemo.utilities.ExtentReportsUtil$1 - **** Executing onTestSuccess method in the ExtentReportsUtil class ****
-04-01-2025 18:49:26 [main] INFO  com.saucedemo.pages.CheckoutInfo$1 - **** Executing constructor for Checkout class ****
-04-01-2025 18:49:27 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
-04-01-2025 18:49:27 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing validateCheckoutInformation method in the CheckoutOverview class ****
-04-01-2025 18:49:28 [main] ERROR com.saucedemo.core.BaseClass$1 - **** Exception error ****
-04-01-2025 18:49:28 [main] ERROR com.saucedemo.core.BaseClass$1 - Cannot format given Object as a Number
-04-01-2025 18:49:28 [main] INFO  com.saucedemo.utilities.ExtentReportsUtil$1 - **** Executing onTestSuccess method in the ExtentReportsUtil class ****
-04-01-2025 18:49:28 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
-04-01-2025 18:49:28 [main] INFO  com.saucedemo.utilities.ExtentReportsUtil$1 - **** Executing onFinish method in the ExtentReportsUtil class ****
+05-01-2025 18:58:46 [main] INFO  com.saucedemo.pages.CheckoutInfo$1 - **** Executing constructor for Checkout class ****
+05-01-2025 18:58:47 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing constructor for CheckoutOverview class ****
+05-01-2025 18:58:47 [main] INFO  com.saucedemo.pages.CheckoutOverview$1 - **** Executing validateCheckoutInformation method in the CheckoutOverview class ****
+05-01-2025 18:58:47 [main] ERROR com.saucedemo.core.BaseClass$1 - **** Exception error ****
+05-01-2025 18:58:47 [main] ERROR com.saucedemo.core.BaseClass$1 - Cannot format given Object as a Number
+05-01-2025 18:58:47 [main] INFO  com.saucedemo.utilities.ExtentReportsUtil$1 - **** Executing onTestSuccess method in the ExtentReportsUtil class ****
+05-01-2025 18:58:47 [main] INFO  com.saucedemo.core.BaseClass$1 - **** tear down of browser in the terminateBrowser method ****
+05-01-2025 18:58:47 [main] INFO  com.saucedemo.utilities.ExtentReportsUtil$1 - **** Executing onFinish method in the ExtentReportsUtil class ****
