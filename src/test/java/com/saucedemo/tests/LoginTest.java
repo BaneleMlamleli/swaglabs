@@ -1,11 +1,13 @@
 package com.saucedemo.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.saucedemo.core.BaseClass;
 import com.saucedemo.pages.Login;
 import com.saucedemo.utilities.ConfigReader;
 
+@Listeners(com.saucedemo.utilities.ExtentReportsUtil.class)
 public class LoginTest extends BaseClass {
 
     String correctUsername = new ConfigReader().getProperty("standard_user");

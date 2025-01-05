@@ -1,5 +1,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="TestNG Suite" verbose="1" parallel="false">
+    <!-- PDND: Listener for the extent report. Alternative is to have listener annotated for each
+    class, specifying the ExtentReport utility class-->
+    <!-- <listeners>
+        <listener class-name="com.saucedemo.utilities.ExtentReportsUtil" />
+    </listeners> -->
     <test name="swaglabs execution test pack">
         <classes>
             <class name="com.saucedemo.tests.LoginTest">
@@ -8,12 +13,12 @@
                 </methods>
             </class>
             <!-- <class name="com.saucedemo.tests.BurgerMenuTest"> -->
-            <class name="com.saucedemo.tests.ProductsTest">
+            <class name="com.saucedemo.tests.ProductsTest" />
             <class name="com.saucedemo.tests.SortProductsTest" />
             <class name="com.saucedemo.tests.CartTest" />
-            <class name="com.saucedemo.tests.CheckoutInfoTest">
+            <class name="com.saucedemo.tests.CheckoutInfoTest" />
             <class name="com.saucedemo.tests.CheckoutOverviewTest" />
-            <class name="com.saucedemo.tests.FinishOrderTest">
+            <class name="com.saucedemo.tests.FinishOrderTest" />
         </classes>
     </test>
 </suite>
