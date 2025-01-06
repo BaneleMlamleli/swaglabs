@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
@@ -16,6 +17,7 @@ import com.saucedemo.utilities.ConfigReader;
 public class BaseClass {
 
     protected static WebDriver driver;
+    protected ChromeOptions chromeOptions;
 
     final String BROWSER = new ConfigReader().getProperty("browser");
     final String URL = new ConfigReader().getProperty("baseUrl");
@@ -30,8 +32,10 @@ public class BaseClass {
         logger.info("url: " + URL);
         switch (BROWSER) {
             case "chrome":
+                chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--headless=new");
                 if (driver == null) {
-                    driver = new ChromeDriver();
+                    driver = new ChromeDriver(chromeOptions);
                     logger.info("Instance of driver in BaseClass: " + driver);
                     driver.manage().window().maximize();
                     driver.get(URL);
