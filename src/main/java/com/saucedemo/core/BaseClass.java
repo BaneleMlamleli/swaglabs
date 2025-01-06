@@ -8,7 +8,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -18,6 +20,8 @@ public class BaseClass {
 
     protected static WebDriver driver;
     protected ChromeOptions chromeOptions;
+    protected FirefoxOptions firefoxOptions;
+    protected EdgeOptions edgeOptions;
 
     final String BROWSER = new ConfigReader().getProperty("browser");
     final String URL = new ConfigReader().getProperty("baseUrl");
@@ -33,7 +37,7 @@ public class BaseClass {
         switch (BROWSER) {
             case "chrome":
                 chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("--headless=new");
+                chromeOptions.addArguments("--headless");
                 if (driver == null) {
                     driver = new ChromeDriver(chromeOptions);
                     logger.info("Instance of driver in BaseClass: " + driver);
@@ -43,8 +47,10 @@ public class BaseClass {
                 }
                 break;
             case "firefox":
+                firefoxOptions = new FirefoxOptions();
+                firefoxOptions.addArguments("--headless");
                 if (driver == null) {
-                    driver = new FirefoxDriver();
+                    driver = new FirefoxDriver(firefoxOptions);
                     logger.info("Instance of driver in BaseClass: " + driver);
                     driver.manage().window().maximize();
                     driver.get(URL);
@@ -52,8 +58,10 @@ public class BaseClass {
                 }
                 break;
             case "edge":
+                edgeOptions = new EdgeOptions();
+                edgeOptions.addArguments("--headless");
                 if (driver == null) {
-                    driver = new EdgeDriver();
+                    driver = new EdgeDriver(edgeOptions);
                     logger.info("Instance of driver in BaseClass: " + driver);
                     driver.manage().window().maximize();
                     driver.get(URL);
