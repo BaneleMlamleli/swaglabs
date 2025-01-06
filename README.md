@@ -1,6 +1,6 @@
 # swaglabs
 
-This is Java Selenium Framework that automates [swaglabs](https://www.saucedemo.com/v1/index.html), a small e-commerce website. My aim is to try and create a robust, maintainable, and scalable Selenium framework that implements real word concepts, standards and technologies
+This is Java Selenium Framework that automates [swaglabs](https://www.saucedemo.com/v1/index.html), a small e-commerce website. My aim is to try and create a robust, maintainable, and scalable Selenium framework that implements real world project concepts, standards and technologies
 
 ## Tech-stack for the project
 
