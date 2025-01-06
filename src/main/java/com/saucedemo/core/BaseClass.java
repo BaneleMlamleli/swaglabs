@@ -26,13 +26,13 @@ public class BaseClass {
     @BeforeClass
     public void initBrowser() {
         logger.info("**** initiating browser in the initBrowser method ****");
-        logger.info("Instance of driver in BaseClass: " + driver);
         logger.info("Browser: " + BROWSER);
         logger.info("url: " + URL);
         switch (BROWSER) {
             case "chrome":
                 if (driver == null) {
                     driver = new ChromeDriver();
+                    logger.info("Instance of driver in BaseClass: " + driver);
                     driver.manage().window().maximize();
                     driver.get(URL);
                     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -41,6 +41,7 @@ public class BaseClass {
             case "firefox":
                 if (driver == null) {
                     driver = new FirefoxDriver();
+                    logger.info("Instance of driver in BaseClass: " + driver);
                     driver.manage().window().maximize();
                     driver.get(URL);
                     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -49,6 +50,7 @@ public class BaseClass {
             case "edge":
                 if (driver == null) {
                     driver = new EdgeDriver();
+                    logger.info("Instance of driver in BaseClass: " + driver);
                     driver.manage().window().maximize();
                     driver.get(URL);
                     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
