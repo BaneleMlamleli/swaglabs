@@ -15,7 +15,54 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import com.saucedemo.utilities.ConfigReader;
-
+/**
+ * The {@code BaseClass} serves as the foundation for test classes in the SauceDemo automation framework. 
+ * It handles browser initialization and termination, providing a standardized setup and teardown process 
+ * for all tests. This class supports multiple browsers (Chrome, Firefox, and Edge) and employs a headless 
+ * configuration for efficient execution.
+ *
+ * <p>
+ * Key features include:
+ * </p>
+ * <ul>
+ *   <li>Dynamic browser selection based on properties configured in {@link com.saucedemo.utilities.ConfigReader}.</li>
+ *   <li>Headless mode setup for Chrome, Firefox, and Edge for faster test execution.</li>
+ *   <li>Implicit wait configuration for synchronization.</li>
+ *   <li>Global WebDriver management to ensure a single driver instance is reused across tests.</li>
+ * </ul>
+ *
+ * <h3>Usage:</h3>
+ * <ul>
+ *   <li>Annotate test classes with {@code @BeforeClass} and {@code @AfterClass} to invoke browser setup and teardown.</li>
+ *   <li>Extend this class in test-specific classes to access the shared {@code WebDriver} instance.</li>
+ * </ul>
+ *
+ * <h3>Dependencies:</h3>
+ * <ul>
+ *   <li>Selenium WebDriver for browser automation.</li>
+ *   <li>TestNG for lifecycle annotations and assertions.</li>
+ *   <li>Log4j for logging operations.</li>
+ *   <li>{@link com.saucedemo.utilities.ConfigReader} for reading browser and URL configurations.</li>
+ * </ul>
+ *
+ * <h3>Example:</h3>
+ * <pre>{@code
+ *
+ * <h3>Browsers Supported:</h3>
+ * <ul>
+ *   <li>Chrome</li>
+ *   <li>Firefox</li>
+ *   <li>Edge</li>
+ * </ul>
+ *
+ * @see com.saucedemo.utilities.ConfigReader
+ * @see org.testng.annotations.BeforeClass
+ * @see org.testng.annotations.AfterClass
+* 
+* @author Banele Mlamleli
+* @version 1.0
+* 
+*/
 public class BaseClass {
 
     protected static WebDriver driver;
