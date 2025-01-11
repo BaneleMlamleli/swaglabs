@@ -12,6 +12,8 @@ This is Java Selenium Framework that automates [swaglabs](https://www.saucedemo.
 - ![Log4J](./src/main/java/com/saucedemo/icons/Log4J.png) Log4J
 - ![Jenkins](./src/main/java/com/saucedemo/icons/Jenkins.png) Jenkins
 - ![AWS EC2](./src/main/java/com/saucedemo/icons/social.png) AWS EC2
+  - Successfully setup and ran Jenkins on AWS EC2 Linux Ubuntu Micro Instance
+  - Due to not wanting to risk forgetting to stop the instance, even though I'm running a free tier, and also not fully understanding the security group's security I've decided to terminate the instance and rather play it safe. I don't want to sell my house in order to pay for an AWS EC2 instance :-)
 - ![Git-flow](./src/main/java/com/saucedemo/icons/git.png) Git
 
 ## Project Structure
